@@ -1,0 +1,16 @@
+{
+  "id": "bridge_tutorial",
+  "speaker": "Памятка",
+  "lines": [
+    {
+      "speaker": "Памятка",
+      "text": "Слева двигайся кругом. Справа атакуй и уклоняйся.",
+      "portrait": "npc.tessa.idle"
+    },
+    {
+      "speaker": "Памятка",
+      "text": "Камень Тепла восстанавливает силы и сохраняет путь.",
+      "portrait": "npc.tessa.idle"
+    }
+  ]
+}

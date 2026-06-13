@@ -1,0 +1,2766 @@
+{
+  "manifest_version": 1,
+  "generated_at": "2026-06-13",
+  "notes": "Logical asset registry for the Ash Dol vertical slice. All runtime paths are canonical and replaceable.",
+  "assets": {
+    "tile.ground.dark_soil": {
+      "runtime_path": "res://assets/runtime/tilesets/ash_dol_tileset.png",
+      "source_filename": "ash_dol_tileset.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "runtime_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "import_date": "2026-06-13",
+      "processing_notes": "Tile atlas cell 0,0",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/tile_set_factory.gd",
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        0,
+        16,
+        16
+      ]
+    },
+    "tile.ground.cracked_soil": {
+      "runtime_path": "res://assets/runtime/tilesets/ash_dol_tileset.png",
+      "source_filename": "ash_dol_tileset.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "runtime_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "import_date": "2026-06-13",
+      "processing_notes": "Tile atlas cell 1,0",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/tile_set_factory.gd",
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        16,
+        0,
+        16,
+        16
+      ]
+    },
+    "tile.ground.stone_ground": {
+      "runtime_path": "res://assets/runtime/tilesets/ash_dol_tileset.png",
+      "source_filename": "ash_dol_tileset.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "runtime_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "import_date": "2026-06-13",
+      "processing_notes": "Tile atlas cell 2,0",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/tile_set_factory.gd",
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        32,
+        0,
+        16,
+        16
+      ]
+    },
+    "tile.ground.gravel": {
+      "runtime_path": "res://assets/runtime/tilesets/ash_dol_tileset.png",
+      "source_filename": "ash_dol_tileset.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "runtime_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "import_date": "2026-06-13",
+      "processing_notes": "Tile atlas cell 3,0",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/tile_set_factory.gd",
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        48,
+        0,
+        16,
+        16
+      ]
+    },
+    "tile.road.path": {
+      "runtime_path": "res://assets/runtime/tilesets/ash_dol_tileset.png",
+      "source_filename": "ash_dol_tileset.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "runtime_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "import_date": "2026-06-13",
+      "processing_notes": "Tile atlas cell 0,1",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/tile_set_factory.gd",
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        16,
+        16,
+        16
+      ]
+    },
+    "tile.ground.grass_edge": {
+      "runtime_path": "res://assets/runtime/tilesets/ash_dol_tileset.png",
+      "source_filename": "ash_dol_tileset.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "runtime_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "import_date": "2026-06-13",
+      "processing_notes": "Tile atlas cell 1,1",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/tile_set_factory.gd",
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        16,
+        16,
+        16,
+        16
+      ]
+    },
+    "tile.wall.cliff": {
+      "runtime_path": "res://assets/runtime/tilesets/ash_dol_tileset.png",
+      "source_filename": "ash_dol_tileset.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "runtime_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "import_date": "2026-06-13",
+      "processing_notes": "Tile atlas cell 2,1",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/tile_set_factory.gd",
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        32,
+        16,
+        16,
+        16
+      ]
+    },
+    "tile.wall.mine": {
+      "runtime_path": "res://assets/runtime/tilesets/ash_dol_tileset.png",
+      "source_filename": "ash_dol_tileset.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "runtime_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "import_date": "2026-06-13",
+      "processing_notes": "Tile atlas cell 3,1",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/tile_set_factory.gd",
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        48,
+        16,
+        16,
+        16
+      ]
+    },
+    "tile.floor.mine": {
+      "runtime_path": "res://assets/runtime/tilesets/ash_dol_tileset.png",
+      "source_filename": "ash_dol_tileset.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "runtime_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "import_date": "2026-06-13",
+      "processing_notes": "Tile atlas cell 0,2",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/tile_set_factory.gd",
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        32,
+        16,
+        16
+      ]
+    },
+    "tile.floor.wood": {
+      "runtime_path": "res://assets/runtime/tilesets/ash_dol_tileset.png",
+      "source_filename": "ash_dol_tileset.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "runtime_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "import_date": "2026-06-13",
+      "processing_notes": "Tile atlas cell 1,2",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/tile_set_factory.gd",
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        16,
+        32,
+        16,
+        16
+      ]
+    },
+    "tile.bridge.wood": {
+      "runtime_path": "res://assets/runtime/tilesets/ash_dol_tileset.png",
+      "source_filename": "ash_dol_tileset.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "runtime_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "import_date": "2026-06-13",
+      "processing_notes": "Tile atlas cell 2,2",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/tile_set_factory.gd",
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        32,
+        32,
+        16,
+        16
+      ]
+    },
+    "tile.water.shallow": {
+      "runtime_path": "res://assets/runtime/tilesets/ash_dol_tileset.png",
+      "source_filename": "ash_dol_tileset.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "runtime_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "import_date": "2026-06-13",
+      "processing_notes": "Tile atlas cell 3,2",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/tile_set_factory.gd",
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        48,
+        32,
+        16,
+        16
+      ]
+    },
+    "tile.ground.rubble": {
+      "runtime_path": "res://assets/runtime/tilesets/ash_dol_tileset.png",
+      "source_filename": "ash_dol_tileset.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "runtime_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "import_date": "2026-06-13",
+      "processing_notes": "Tile atlas cell 0,3",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/tile_set_factory.gd",
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        48,
+        16,
+        16
+      ]
+    },
+    "tile.ground.glowing_mineral": {
+      "runtime_path": "res://assets/runtime/tilesets/ash_dol_tileset.png",
+      "source_filename": "ash_dol_tileset.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "runtime_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "import_date": "2026-06-13",
+      "processing_notes": "Tile atlas cell 1,3",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/tile_set_factory.gd",
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        16,
+        48,
+        16,
+        16
+      ]
+    },
+    "tile.wall.furnace_metal": {
+      "runtime_path": "res://assets/runtime/tilesets/ash_dol_tileset.png",
+      "source_filename": "ash_dol_tileset.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "runtime_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "import_date": "2026-06-13",
+      "processing_notes": "Tile atlas cell 2,3",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/tile_set_factory.gd",
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        32,
+        48,
+        16,
+        16
+      ]
+    },
+    "tile.transparent": {
+      "runtime_path": "res://assets/runtime/tilesets/ash_dol_tileset.png",
+      "source_filename": "ash_dol_tileset.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "runtime_hash": "ef1fa6d9b17a96cf085eb12be6d488cec4a8ffa238a3d0f021374f45a65729ec",
+      "import_date": "2026-06-13",
+      "processing_notes": "Tile atlas cell 3,3",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/tile_set_factory.gd",
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        48,
+        48,
+        16,
+        16
+      ]
+    },
+    "player.placeholder.idle_down": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 0 col 0",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        0,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.idle_left": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 0 col 1",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        32,
+        0,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.idle_right": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 0 col 2",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        64,
+        0,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.idle_up": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 0 col 3",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        96,
+        0,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.walk_down": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 1 col 0",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        48,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.walk_left": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 1 col 1",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        32,
+        48,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.walk_right": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 1 col 2",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        64,
+        48,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.walk_up": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 1 col 3",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        96,
+        48,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.attack_light_down": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 2 col 0",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        96,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.attack_light_left": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 2 col 1",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        32,
+        96,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.attack_light_right": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 2 col 2",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        64,
+        96,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.attack_light_up": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 2 col 3",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        96,
+        96,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.attack_heavy_down": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 3 col 0",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        144,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.attack_heavy_left": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 3 col 1",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        32,
+        144,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.attack_heavy_right": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 3 col 2",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        64,
+        144,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.attack_heavy_up": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 3 col 3",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        96,
+        144,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.dodge_down": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 4 col 0",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        192,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.dodge_left": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 4 col 1",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        32,
+        192,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.dodge_right": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 4 col 2",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        64,
+        192,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.dodge_up": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player atlas row 4 col 3",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        96,
+        192,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.hit": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player special hit frame",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        240,
+        32,
+        48
+      ]
+    },
+    "player.placeholder.death": {
+      "runtime_path": "res://assets/runtime/characters/player_placeholder_atlas.png",
+      "source_filename": "player_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "runtime_hash": "0d37e5b637791103abdcf100de09f1d32a09252b2c417b9203cd444217364f4c",
+      "import_date": "2026-06-13",
+      "processing_notes": "Player special death frame",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/player/player.tscn",
+        "scripts/player/player.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        32,
+        240,
+        32,
+        48
+      ]
+    },
+    "enemy.ash_mite.idle": {
+      "runtime_path": "res://assets/runtime/enemies/ash_mite_placeholder_atlas.png",
+      "source_filename": "ash_mite_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "7165b932f45e0672df9c8b2cb2456f38bd405e1bbff6fa2b348d139bd42f778b",
+      "runtime_hash": "7165b932f45e0672df9c8b2cb2456f38bd405e1bbff6fa2b348d139bd42f778b",
+      "import_date": "2026-06-13",
+      "processing_notes": "ash_mite row 0",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/ash_mite.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "enemy.ash_mite.walk": {
+      "runtime_path": "res://assets/runtime/enemies/ash_mite_placeholder_atlas.png",
+      "source_filename": "ash_mite_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "7165b932f45e0672df9c8b2cb2456f38bd405e1bbff6fa2b348d139bd42f778b",
+      "runtime_hash": "7165b932f45e0672df9c8b2cb2456f38bd405e1bbff6fa2b348d139bd42f778b",
+      "import_date": "2026-06-13",
+      "processing_notes": "ash_mite row 1",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/ash_mite.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    "enemy.ash_mite.attack": {
+      "runtime_path": "res://assets/runtime/enemies/ash_mite_placeholder_atlas.png",
+      "source_filename": "ash_mite_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "7165b932f45e0672df9c8b2cb2456f38bd405e1bbff6fa2b348d139bd42f778b",
+      "runtime_hash": "7165b932f45e0672df9c8b2cb2456f38bd405e1bbff6fa2b348d139bd42f778b",
+      "import_date": "2026-06-13",
+      "processing_notes": "ash_mite row 2",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/ash_mite.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        64,
+        32,
+        32
+      ]
+    },
+    "enemy.ash_mite.hit": {
+      "runtime_path": "res://assets/runtime/enemies/ash_mite_placeholder_atlas.png",
+      "source_filename": "ash_mite_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "7165b932f45e0672df9c8b2cb2456f38bd405e1bbff6fa2b348d139bd42f778b",
+      "runtime_hash": "7165b932f45e0672df9c8b2cb2456f38bd405e1bbff6fa2b348d139bd42f778b",
+      "import_date": "2026-06-13",
+      "processing_notes": "ash_mite row 3",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/ash_mite.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        96,
+        32,
+        32
+      ]
+    },
+    "enemy.ash_mite.death": {
+      "runtime_path": "res://assets/runtime/enemies/ash_mite_placeholder_atlas.png",
+      "source_filename": "ash_mite_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "7165b932f45e0672df9c8b2cb2456f38bd405e1bbff6fa2b348d139bd42f778b",
+      "runtime_hash": "7165b932f45e0672df9c8b2cb2456f38bd405e1bbff6fa2b348d139bd42f778b",
+      "import_date": "2026-06-13",
+      "processing_notes": "ash_mite row 4",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/ash_mite.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        128,
+        32,
+        32
+      ]
+    },
+    "enemy.petrified_wolf.idle": {
+      "runtime_path": "res://assets/runtime/enemies/petrified_wolf_placeholder_atlas.png",
+      "source_filename": "petrified_wolf_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "906bf95f279470a3a759a9861b2ae3974fa970cc5212ea52ff814ca1acbd065d",
+      "runtime_hash": "906bf95f279470a3a759a9861b2ae3974fa970cc5212ea52ff814ca1acbd065d",
+      "import_date": "2026-06-13",
+      "processing_notes": "petrified_wolf row 0",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/petrified_wolf.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "enemy.petrified_wolf.walk": {
+      "runtime_path": "res://assets/runtime/enemies/petrified_wolf_placeholder_atlas.png",
+      "source_filename": "petrified_wolf_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "906bf95f279470a3a759a9861b2ae3974fa970cc5212ea52ff814ca1acbd065d",
+      "runtime_hash": "906bf95f279470a3a759a9861b2ae3974fa970cc5212ea52ff814ca1acbd065d",
+      "import_date": "2026-06-13",
+      "processing_notes": "petrified_wolf row 1",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/petrified_wolf.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    "enemy.petrified_wolf.attack": {
+      "runtime_path": "res://assets/runtime/enemies/petrified_wolf_placeholder_atlas.png",
+      "source_filename": "petrified_wolf_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "906bf95f279470a3a759a9861b2ae3974fa970cc5212ea52ff814ca1acbd065d",
+      "runtime_hash": "906bf95f279470a3a759a9861b2ae3974fa970cc5212ea52ff814ca1acbd065d",
+      "import_date": "2026-06-13",
+      "processing_notes": "petrified_wolf row 2",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/petrified_wolf.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        64,
+        32,
+        32
+      ]
+    },
+    "enemy.petrified_wolf.hit": {
+      "runtime_path": "res://assets/runtime/enemies/petrified_wolf_placeholder_atlas.png",
+      "source_filename": "petrified_wolf_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "906bf95f279470a3a759a9861b2ae3974fa970cc5212ea52ff814ca1acbd065d",
+      "runtime_hash": "906bf95f279470a3a759a9861b2ae3974fa970cc5212ea52ff814ca1acbd065d",
+      "import_date": "2026-06-13",
+      "processing_notes": "petrified_wolf row 3",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/petrified_wolf.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        96,
+        32,
+        32
+      ]
+    },
+    "enemy.petrified_wolf.death": {
+      "runtime_path": "res://assets/runtime/enemies/petrified_wolf_placeholder_atlas.png",
+      "source_filename": "petrified_wolf_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "906bf95f279470a3a759a9861b2ae3974fa970cc5212ea52ff814ca1acbd065d",
+      "runtime_hash": "906bf95f279470a3a759a9861b2ae3974fa970cc5212ea52ff814ca1acbd065d",
+      "import_date": "2026-06-13",
+      "processing_notes": "petrified_wolf row 4",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/petrified_wolf.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        128,
+        32,
+        32
+      ]
+    },
+    "enemy.hollow_miner.idle": {
+      "runtime_path": "res://assets/runtime/enemies/hollow_miner_placeholder_atlas.png",
+      "source_filename": "hollow_miner_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b34c003adcfe0a46715db7e1ef94a48bf6bfdc9eec16bdfaf1f95eeee2386a32",
+      "runtime_hash": "b34c003adcfe0a46715db7e1ef94a48bf6bfdc9eec16bdfaf1f95eeee2386a32",
+      "import_date": "2026-06-13",
+      "processing_notes": "hollow_miner row 0",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/hollow_miner.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "enemy.hollow_miner.walk": {
+      "runtime_path": "res://assets/runtime/enemies/hollow_miner_placeholder_atlas.png",
+      "source_filename": "hollow_miner_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b34c003adcfe0a46715db7e1ef94a48bf6bfdc9eec16bdfaf1f95eeee2386a32",
+      "runtime_hash": "b34c003adcfe0a46715db7e1ef94a48bf6bfdc9eec16bdfaf1f95eeee2386a32",
+      "import_date": "2026-06-13",
+      "processing_notes": "hollow_miner row 1",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/hollow_miner.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    "enemy.hollow_miner.attack": {
+      "runtime_path": "res://assets/runtime/enemies/hollow_miner_placeholder_atlas.png",
+      "source_filename": "hollow_miner_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b34c003adcfe0a46715db7e1ef94a48bf6bfdc9eec16bdfaf1f95eeee2386a32",
+      "runtime_hash": "b34c003adcfe0a46715db7e1ef94a48bf6bfdc9eec16bdfaf1f95eeee2386a32",
+      "import_date": "2026-06-13",
+      "processing_notes": "hollow_miner row 2",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/hollow_miner.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        64,
+        32,
+        32
+      ]
+    },
+    "enemy.hollow_miner.hit": {
+      "runtime_path": "res://assets/runtime/enemies/hollow_miner_placeholder_atlas.png",
+      "source_filename": "hollow_miner_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b34c003adcfe0a46715db7e1ef94a48bf6bfdc9eec16bdfaf1f95eeee2386a32",
+      "runtime_hash": "b34c003adcfe0a46715db7e1ef94a48bf6bfdc9eec16bdfaf1f95eeee2386a32",
+      "import_date": "2026-06-13",
+      "processing_notes": "hollow_miner row 3",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/hollow_miner.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        96,
+        32,
+        32
+      ]
+    },
+    "enemy.hollow_miner.death": {
+      "runtime_path": "res://assets/runtime/enemies/hollow_miner_placeholder_atlas.png",
+      "source_filename": "hollow_miner_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b34c003adcfe0a46715db7e1ef94a48bf6bfdc9eec16bdfaf1f95eeee2386a32",
+      "runtime_hash": "b34c003adcfe0a46715db7e1ef94a48bf6bfdc9eec16bdfaf1f95eeee2386a32",
+      "import_date": "2026-06-13",
+      "processing_notes": "hollow_miner row 4",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/hollow_miner.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        128,
+        32,
+        32
+      ]
+    },
+    "enemy.training_dummy.idle": {
+      "runtime_path": "res://assets/runtime/enemies/training_dummy_placeholder_atlas.png",
+      "source_filename": "training_dummy_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "9daa0e46b47f9004d90cf59580fab6c6d75c61d564f54c731e14009918d92341",
+      "runtime_hash": "9daa0e46b47f9004d90cf59580fab6c6d75c61d564f54c731e14009918d92341",
+      "import_date": "2026-06-13",
+      "processing_notes": "training_dummy row 0",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/training_dummy.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "enemy.training_dummy.walk": {
+      "runtime_path": "res://assets/runtime/enemies/training_dummy_placeholder_atlas.png",
+      "source_filename": "training_dummy_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "9daa0e46b47f9004d90cf59580fab6c6d75c61d564f54c731e14009918d92341",
+      "runtime_hash": "9daa0e46b47f9004d90cf59580fab6c6d75c61d564f54c731e14009918d92341",
+      "import_date": "2026-06-13",
+      "processing_notes": "training_dummy row 1",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/training_dummy.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    "enemy.training_dummy.attack": {
+      "runtime_path": "res://assets/runtime/enemies/training_dummy_placeholder_atlas.png",
+      "source_filename": "training_dummy_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "9daa0e46b47f9004d90cf59580fab6c6d75c61d564f54c731e14009918d92341",
+      "runtime_hash": "9daa0e46b47f9004d90cf59580fab6c6d75c61d564f54c731e14009918d92341",
+      "import_date": "2026-06-13",
+      "processing_notes": "training_dummy row 2",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/training_dummy.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        64,
+        32,
+        32
+      ]
+    },
+    "enemy.training_dummy.hit": {
+      "runtime_path": "res://assets/runtime/enemies/training_dummy_placeholder_atlas.png",
+      "source_filename": "training_dummy_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "9daa0e46b47f9004d90cf59580fab6c6d75c61d564f54c731e14009918d92341",
+      "runtime_hash": "9daa0e46b47f9004d90cf59580fab6c6d75c61d564f54c731e14009918d92341",
+      "import_date": "2026-06-13",
+      "processing_notes": "training_dummy row 3",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/training_dummy.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        96,
+        32,
+        32
+      ]
+    },
+    "enemy.training_dummy.death": {
+      "runtime_path": "res://assets/runtime/enemies/training_dummy_placeholder_atlas.png",
+      "source_filename": "training_dummy_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "9daa0e46b47f9004d90cf59580fab6c6d75c61d564f54c731e14009918d92341",
+      "runtime_hash": "9daa0e46b47f9004d90cf59580fab6c6d75c61d564f54c731e14009918d92341",
+      "import_date": "2026-06-13",
+      "processing_notes": "training_dummy row 4",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/enemies/training_dummy.tscn",
+        "scripts/enemies/enemy_base.gd"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        128,
+        32,
+        32
+      ]
+    },
+    "npc.tessa.idle": {
+      "runtime_path": "res://assets/runtime/characters/npc_tessa_placeholder.png",
+      "source_filename": "npc_tessa_placeholder.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "9f2fa9fd9af473ed628a24c00baaec9f24b456df20da025b5d2a436cb0619e72",
+      "runtime_hash": "9f2fa9fd9af473ed628a24c00baaec9f24b456df20da025b5d2a436cb0619e72",
+      "import_date": "2026-06-13",
+      "processing_notes": "NPC portrait placeholder for Тесса.",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/npc/tesa.tscn",
+        "data/dialogues/tesa_intro.json"
+      ],
+      "designation": "temporary"
+    },
+    "ui.bar.health_frame": {
+      "runtime_path": "res://assets/runtime/ui/ui_placeholder_atlas.png",
+      "source_filename": "ui_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "runtime_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "import_date": "2026-06-13",
+      "processing_notes": "UI atlas health frame",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/mobile_hud.tscn",
+        "scenes/ui/pause_menu.tscn",
+        "scenes/ui/inventory_panel.tscn",
+        "scenes/ui/journal_panel.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        0,
+        64,
+        64
+      ]
+    },
+    "ui.bar.health_fill": {
+      "runtime_path": "res://assets/runtime/ui/ui_placeholder_atlas.png",
+      "source_filename": "ui_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "runtime_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "import_date": "2026-06-13",
+      "processing_notes": "UI atlas health fill",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/mobile_hud.tscn",
+        "scenes/ui/pause_menu.tscn",
+        "scenes/ui/inventory_panel.tscn",
+        "scenes/ui/journal_panel.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        64,
+        0,
+        64,
+        64
+      ]
+    },
+    "ui.bar.stamina_frame": {
+      "runtime_path": "res://assets/runtime/ui/ui_placeholder_atlas.png",
+      "source_filename": "ui_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "runtime_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "import_date": "2026-06-13",
+      "processing_notes": "UI atlas stamina frame",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/mobile_hud.tscn",
+        "scenes/ui/pause_menu.tscn",
+        "scenes/ui/inventory_panel.tscn",
+        "scenes/ui/journal_panel.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        128,
+        0,
+        64,
+        64
+      ]
+    },
+    "ui.bar.stamina_fill": {
+      "runtime_path": "res://assets/runtime/ui/ui_placeholder_atlas.png",
+      "source_filename": "ui_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "runtime_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "import_date": "2026-06-13",
+      "processing_notes": "UI atlas stamina fill",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/mobile_hud.tscn",
+        "scenes/ui/pause_menu.tscn",
+        "scenes/ui/inventory_panel.tscn",
+        "scenes/ui/journal_panel.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        192,
+        0,
+        64,
+        64
+      ]
+    },
+    "ui.button.attack": {
+      "runtime_path": "res://assets/runtime/ui/ui_placeholder_atlas.png",
+      "source_filename": "ui_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "runtime_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "import_date": "2026-06-13",
+      "processing_notes": "UI atlas attack button",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/mobile_hud.tscn",
+        "scenes/ui/pause_menu.tscn",
+        "scenes/ui/inventory_panel.tscn",
+        "scenes/ui/journal_panel.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        64,
+        64,
+        64
+      ]
+    },
+    "ui.button.heavy_attack": {
+      "runtime_path": "res://assets/runtime/ui/ui_placeholder_atlas.png",
+      "source_filename": "ui_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "runtime_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "import_date": "2026-06-13",
+      "processing_notes": "UI atlas heavy attack button",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/mobile_hud.tscn",
+        "scenes/ui/pause_menu.tscn",
+        "scenes/ui/inventory_panel.tscn",
+        "scenes/ui/journal_panel.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        64,
+        64,
+        64,
+        64
+      ]
+    },
+    "ui.button.dodge": {
+      "runtime_path": "res://assets/runtime/ui/ui_placeholder_atlas.png",
+      "source_filename": "ui_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "runtime_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "import_date": "2026-06-13",
+      "processing_notes": "UI atlas dodge button",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/mobile_hud.tscn",
+        "scenes/ui/pause_menu.tscn",
+        "scenes/ui/inventory_panel.tscn",
+        "scenes/ui/journal_panel.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        128,
+        64,
+        64,
+        64
+      ]
+    },
+    "ui.button.interact": {
+      "runtime_path": "res://assets/runtime/ui/ui_placeholder_atlas.png",
+      "source_filename": "ui_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "runtime_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "import_date": "2026-06-13",
+      "processing_notes": "UI atlas interact button",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/mobile_hud.tscn",
+        "scenes/ui/pause_menu.tscn",
+        "scenes/ui/inventory_panel.tscn",
+        "scenes/ui/journal_panel.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        192,
+        64,
+        64,
+        64
+      ]
+    },
+    "ui.button.heal": {
+      "runtime_path": "res://assets/runtime/ui/ui_placeholder_atlas.png",
+      "source_filename": "ui_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "runtime_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "import_date": "2026-06-13",
+      "processing_notes": "UI atlas heal button",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/mobile_hud.tscn",
+        "scenes/ui/pause_menu.tscn",
+        "scenes/ui/inventory_panel.tscn",
+        "scenes/ui/journal_panel.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        128,
+        64,
+        64
+      ]
+    },
+    "ui.button.pause": {
+      "runtime_path": "res://assets/runtime/ui/ui_placeholder_atlas.png",
+      "source_filename": "ui_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "runtime_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "import_date": "2026-06-13",
+      "processing_notes": "UI atlas pause button",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/mobile_hud.tscn",
+        "scenes/ui/pause_menu.tscn",
+        "scenes/ui/inventory_panel.tscn",
+        "scenes/ui/journal_panel.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        64,
+        128,
+        64,
+        64
+      ]
+    },
+    "ui.slot.inventory": {
+      "runtime_path": "res://assets/runtime/ui/kenney_slot_inventory.png",
+      "source_filename": "9-Slice/space.png",
+      "source_page": "https://kenney.nl/assets/pixel-ui-pack",
+      "source_domain": "kenney.nl",
+      "creator_name": "Kenney Vleugels",
+      "asset_pack_name": "Kenney Pixel UI Pack",
+      "asset_pack_version": "1",
+      "license_name": "CC0 1.0",
+      "license_proof_path": "res://third_party/assets/kenney-pixel-ui-pack/License.txt",
+      "attribution_required": false,
+      "source_hash": "4eb96da68441bb9892bee9bb2a31510ccec02a19d6a85209ca16e35f64ec0d1f",
+      "runtime_hash": "4eb96da68441bb9892bee9bb2a31510ccec02a19d6a85209ca16e35f64ec0d1f",
+      "import_date": "2026-06-13",
+      "processing_notes": "Normalized CC0 UI 9-slice panel/slot asset from Kenney Pixel UI Pack.",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/inventory_panel.tscn",
+        "scripts/ui/inventory_panel.gd"
+      ],
+      "designation": "temporary"
+    },
+    "ui.slot.inventory_selected": {
+      "runtime_path": "res://assets/runtime/ui/kenney_slot_inventory_selected.png",
+      "source_filename": "9-Slice/space_inlay.png",
+      "source_page": "https://kenney.nl/assets/pixel-ui-pack",
+      "source_domain": "kenney.nl",
+      "creator_name": "Kenney Vleugels",
+      "asset_pack_name": "Kenney Pixel UI Pack",
+      "asset_pack_version": "1",
+      "license_name": "CC0 1.0",
+      "license_proof_path": "res://third_party/assets/kenney-pixel-ui-pack/License.txt",
+      "attribution_required": false,
+      "source_hash": "cc48668d130953d55c53fcb8e0613a81c06bf8119f23b568989c2881b7840ed6",
+      "runtime_hash": "cc48668d130953d55c53fcb8e0613a81c06bf8119f23b568989c2881b7840ed6",
+      "import_date": "2026-06-13",
+      "processing_notes": "Normalized CC0 UI 9-slice panel/slot asset from Kenney Pixel UI Pack.",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/inventory_panel.tscn",
+        "scripts/ui/inventory_panel.gd"
+      ],
+      "designation": "temporary"
+    },
+    "ui.checkpoint_icon": {
+      "runtime_path": "res://assets/runtime/ui/ui_placeholder_atlas.png",
+      "source_filename": "ui_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "runtime_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "import_date": "2026-06-13",
+      "processing_notes": "UI atlas checkpoint icon",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/mobile_hud.tscn",
+        "scenes/ui/pause_menu.tscn",
+        "scenes/ui/inventory_panel.tscn",
+        "scenes/ui/journal_panel.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        192,
+        64,
+        64
+      ]
+    },
+    "ui.save_icon": {
+      "runtime_path": "res://assets/runtime/ui/ui_placeholder_atlas.png",
+      "source_filename": "ui_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "runtime_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "import_date": "2026-06-13",
+      "processing_notes": "UI atlas save icon",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/mobile_hud.tscn",
+        "scenes/ui/pause_menu.tscn",
+        "scenes/ui/inventory_panel.tscn",
+        "scenes/ui/journal_panel.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        64,
+        192,
+        64,
+        64
+      ]
+    },
+    "ui.button.inventory": {
+      "runtime_path": "res://assets/runtime/ui/ui_placeholder_atlas.png",
+      "source_filename": "ui_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "runtime_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "import_date": "2026-06-13",
+      "processing_notes": "UI atlas inventory button placeholder",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/mobile_hud.tscn",
+        "scenes/ui/pause_menu.tscn",
+        "scenes/ui/inventory_panel.tscn",
+        "scenes/ui/journal_panel.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        128,
+        192,
+        64,
+        64
+      ]
+    },
+    "ui.button.journal": {
+      "runtime_path": "res://assets/runtime/ui/ui_placeholder_atlas.png",
+      "source_filename": "ui_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "runtime_hash": "b3ef17473c46d9d43d0fbb80f7c72316084ee6e2fce18c0702a122f4e2dca712",
+      "import_date": "2026-06-13",
+      "processing_notes": "UI atlas journal button placeholder",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/mobile_hud.tscn",
+        "scenes/ui/pause_menu.tscn",
+        "scenes/ui/inventory_panel.tscn",
+        "scenes/ui/journal_panel.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        192,
+        192,
+        64,
+        64
+      ]
+    },
+    "item.rusty_knife": {
+      "runtime_path": "res://assets/runtime/items/item_placeholder_atlas.png",
+      "source_filename": "item_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "725cb770e795e380554849213e4303801c26927d3eae8fa2f2e8451f97d0f4f6",
+      "runtime_hash": "725cb770e795e380554849213e4303801c26927d3eae8fa2f2e8451f97d0f4f6",
+      "import_date": "2026-06-13",
+      "processing_notes": "Item atlas row 0 col 0",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/inventory_panel.tscn",
+        "data/items/*.json"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "item.miner_blade": {
+      "runtime_path": "res://assets/runtime/items/item_placeholder_atlas.png",
+      "source_filename": "item_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "725cb770e795e380554849213e4303801c26927d3eae8fa2f2e8451f97d0f4f6",
+      "runtime_hash": "725cb770e795e380554849213e4303801c26927d3eae8fa2f2e8451f97d0f4f6",
+      "import_date": "2026-06-13",
+      "processing_notes": "Item atlas row 0 col 1",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/inventory_panel.tscn",
+        "data/items/*.json"
+      ],
+      "designation": "temporary",
+      "region": [
+        32,
+        0,
+        32,
+        32
+      ]
+    },
+    "item.healing_herb": {
+      "runtime_path": "res://assets/runtime/items/item_placeholder_atlas.png",
+      "source_filename": "item_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "725cb770e795e380554849213e4303801c26927d3eae8fa2f2e8451f97d0f4f6",
+      "runtime_hash": "725cb770e795e380554849213e4303801c26927d3eae8fa2f2e8451f97d0f4f6",
+      "import_date": "2026-06-13",
+      "processing_notes": "Item atlas row 0 col 2",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/inventory_panel.tscn",
+        "data/items/*.json"
+      ],
+      "designation": "temporary",
+      "region": [
+        64,
+        0,
+        32,
+        32
+      ]
+    },
+    "item.key": {
+      "runtime_path": "res://assets/runtime/items/item_placeholder_atlas.png",
+      "source_filename": "item_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "725cb770e795e380554849213e4303801c26927d3eae8fa2f2e8451f97d0f4f6",
+      "runtime_hash": "725cb770e795e380554849213e4303801c26927d3eae8fa2f2e8451f97d0f4f6",
+      "import_date": "2026-06-13",
+      "processing_notes": "Item atlas row 0 col 3",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/inventory_panel.tscn",
+        "data/items/*.json"
+      ],
+      "designation": "temporary",
+      "region": [
+        96,
+        0,
+        32,
+        32
+      ]
+    },
+    "item.living_stone_fragment": {
+      "runtime_path": "res://assets/runtime/items/item_placeholder_atlas.png",
+      "source_filename": "item_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "725cb770e795e380554849213e4303801c26927d3eae8fa2f2e8451f97d0f4f6",
+      "runtime_hash": "725cb770e795e380554849213e4303801c26927d3eae8fa2f2e8451f97d0f4f6",
+      "import_date": "2026-06-13",
+      "processing_notes": "Item atlas row 1 col 0",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/inventory_panel.tscn",
+        "data/items/*.json"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    "item.note": {
+      "runtime_path": "res://assets/runtime/items/item_placeholder_atlas.png",
+      "source_filename": "item_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "725cb770e795e380554849213e4303801c26927d3eae8fa2f2e8451f97d0f4f6",
+      "runtime_hash": "725cb770e795e380554849213e4303801c26927d3eae8fa2f2e8451f97d0f4f6",
+      "import_date": "2026-06-13",
+      "processing_notes": "Item atlas row 1 col 1",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/inventory_panel.tscn",
+        "data/items/*.json"
+      ],
+      "designation": "temporary",
+      "region": [
+        32,
+        32,
+        32,
+        32
+      ]
+    },
+    "item.lantern": {
+      "runtime_path": "res://assets/runtime/items/item_placeholder_atlas.png",
+      "source_filename": "item_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "725cb770e795e380554849213e4303801c26927d3eae8fa2f2e8451f97d0f4f6",
+      "runtime_hash": "725cb770e795e380554849213e4303801c26927d3eae8fa2f2e8451f97d0f4f6",
+      "import_date": "2026-06-13",
+      "processing_notes": "Item atlas row 1 col 2",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/inventory_panel.tscn",
+        "data/items/*.json"
+      ],
+      "designation": "temporary",
+      "region": [
+        64,
+        32,
+        32,
+        32
+      ]
+    },
+    "item.quest_seal": {
+      "runtime_path": "res://assets/runtime/items/item_placeholder_atlas.png",
+      "source_filename": "item_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "725cb770e795e380554849213e4303801c26927d3eae8fa2f2e8451f97d0f4f6",
+      "runtime_hash": "725cb770e795e380554849213e4303801c26927d3eae8fa2f2e8451f97d0f4f6",
+      "import_date": "2026-06-13",
+      "processing_notes": "Item atlas row 1 col 3",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/inventory_panel.tscn",
+        "data/items/*.json"
+      ],
+      "designation": "temporary",
+      "region": [
+        96,
+        32,
+        32,
+        32
+      ]
+    },
+    "fx.ash_particle": {
+      "runtime_path": "res://assets/runtime/effects/fx_placeholder_atlas.png",
+      "source_filename": "fx_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "f3395d142dacee81a8d1b3210d359cc4f667d1c65051f293032d46b83cbb971f",
+      "runtime_hash": "f3395d142dacee81a8d1b3210d359cc4f667d1c65051f293032d46b83cbb971f",
+      "import_date": "2026-06-13",
+      "processing_notes": "FX atlas row 0 col 0",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    "fx.spark_particle": {
+      "runtime_path": "res://assets/runtime/effects/fx_placeholder_atlas.png",
+      "source_filename": "fx_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "f3395d142dacee81a8d1b3210d359cc4f667d1c65051f293032d46b83cbb971f",
+      "runtime_hash": "f3395d142dacee81a8d1b3210d359cc4f667d1c65051f293032d46b83cbb971f",
+      "import_date": "2026-06-13",
+      "processing_notes": "FX atlas row 0 col 1",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        32,
+        0,
+        32,
+        32
+      ]
+    },
+    "fx.dust_particle": {
+      "runtime_path": "res://assets/runtime/effects/fx_placeholder_atlas.png",
+      "source_filename": "fx_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "f3395d142dacee81a8d1b3210d359cc4f667d1c65051f293032d46b83cbb971f",
+      "runtime_hash": "f3395d142dacee81a8d1b3210d359cc4f667d1c65051f293032d46b83cbb971f",
+      "import_date": "2026-06-13",
+      "processing_notes": "FX atlas row 0 col 2",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        64,
+        0,
+        32,
+        32
+      ]
+    },
+    "fx.hit_flash": {
+      "runtime_path": "res://assets/runtime/effects/fx_placeholder_atlas.png",
+      "source_filename": "fx_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "f3395d142dacee81a8d1b3210d359cc4f667d1c65051f293032d46b83cbb971f",
+      "runtime_hash": "f3395d142dacee81a8d1b3210d359cc4f667d1c65051f293032d46b83cbb971f",
+      "import_date": "2026-06-13",
+      "processing_notes": "FX atlas row 1 col 0",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    "fx.checkpoint_glow": {
+      "runtime_path": "res://assets/runtime/effects/fx_placeholder_atlas.png",
+      "source_filename": "fx_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "f3395d142dacee81a8d1b3210d359cc4f667d1c65051f293032d46b83cbb971f",
+      "runtime_hash": "f3395d142dacee81a8d1b3210d359cc4f667d1c65051f293032d46b83cbb971f",
+      "import_date": "2026-06-13",
+      "processing_notes": "FX atlas row 1 col 1",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        32,
+        32,
+        32,
+        32
+      ]
+    },
+    "fx.mineral_glow": {
+      "runtime_path": "res://assets/runtime/effects/fx_placeholder_atlas.png",
+      "source_filename": "fx_placeholder_atlas.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "f3395d142dacee81a8d1b3210d359cc4f667d1c65051f293032d46b83cbb971f",
+      "runtime_hash": "f3395d142dacee81a8d1b3210d359cc4f667d1c65051f293032d46b83cbb971f",
+      "import_date": "2026-06-13",
+      "processing_notes": "FX atlas row 1 col 2",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/world/location_scene.gd",
+        "scenes/locations/*.tscn"
+      ],
+      "designation": "temporary",
+      "region": [
+        64,
+        32,
+        32,
+        32
+      ]
+    },
+    "placeholder.missing": {
+      "runtime_path": "res://assets/runtime/ui/missing_placeholder.png",
+      "source_filename": "missing_placeholder.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "4e39e3a15563f567aea8c6a0a8ed7044cf2004b10dd486f07b87c2826db4ddba",
+      "runtime_hash": "4e39e3a15563f567aea8c6a0a8ed7044cf2004b10dd486f07b87c2826db4ddba",
+      "import_date": "2026-06-13",
+      "processing_notes": "Fallback texture for missing assets.",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scripts/autoload/asset_catalog.gd"
+      ],
+      "designation": "temporary"
+    },
+    "environment.dead_tree.placeholder": {
+      "runtime_path": "res://assets/runtime/environment/dead_tree_placeholder.png",
+      "source_filename": "dead_tree_placeholder.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "bb2d8042a23f2fdb642e308a4ec6d5beef0607c3c28a3fd41a376e83a543d613",
+      "runtime_hash": "bb2d8042a23f2fdb642e308a4ec6d5beef0607c3c28a3fd41a376e83a543d613",
+      "import_date": "2026-06-13",
+      "processing_notes": "Standalone environmental prop placeholder used in location scenes.",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/locations/*.tscn",
+        "scripts/world/location_scene.gd"
+      ],
+      "designation": "temporary"
+    },
+    "environment.furnace_pipe.placeholder": {
+      "runtime_path": "res://assets/runtime/environment/furnace_pipe_placeholder.png",
+      "source_filename": "furnace_pipe_placeholder.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "b43122f2a1bcdf989027ae184f462ea6a4359202bb3de41256a442bec5996d0b",
+      "runtime_hash": "b43122f2a1bcdf989027ae184f462ea6a4359202bb3de41256a442bec5996d0b",
+      "import_date": "2026-06-13",
+      "processing_notes": "Standalone environmental prop placeholder used in location scenes.",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/locations/*.tscn",
+        "scripts/world/location_scene.gd"
+      ],
+      "designation": "temporary"
+    },
+    "environment.lantern.placeholder": {
+      "runtime_path": "res://assets/runtime/environment/lantern_placeholder.png",
+      "source_filename": "lantern_placeholder.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "84da0fe0d9c25fdbcfb977ba9e17ab582923a6c23a8adb3f44e97369c3b50743",
+      "runtime_hash": "84da0fe0d9c25fdbcfb977ba9e17ab582923a6c23a8adb3f44e97369c3b50743",
+      "import_date": "2026-06-13",
+      "processing_notes": "Standalone environmental prop placeholder used in location scenes.",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/locations/*.tscn",
+        "scripts/world/location_scene.gd"
+      ],
+      "designation": "temporary"
+    },
+    "environment.gate.placeholder": {
+      "runtime_path": "res://assets/runtime/environment/gate_placeholder.png",
+      "source_filename": "gate_placeholder.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "bootstrap-1",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "154567981b7d2e324839f553576ce45b614212ee4f5e9c80752ae61c74958afe",
+      "runtime_hash": "154567981b7d2e324839f553576ce45b614212ee4f5e9c80752ae61c74958afe",
+      "import_date": "2026-06-13",
+      "processing_notes": "Standalone environmental prop placeholder used in location scenes.",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/locations/*.tscn",
+        "scripts/world/location_scene.gd"
+      ],
+      "designation": "temporary"
+    },
+    "ui.panel.dialogue": {
+      "runtime_path": "res://assets/runtime/ui/kenney_panel_dialogue.png",
+      "source_filename": "9-Slice/Ancient/brown.png",
+      "source_page": "https://kenney.nl/assets/pixel-ui-pack",
+      "source_domain": "kenney.nl",
+      "creator_name": "Kenney Vleugels",
+      "asset_pack_name": "Kenney Pixel UI Pack",
+      "asset_pack_version": "1",
+      "license_name": "CC0 1.0",
+      "license_proof_path": "res://third_party/assets/kenney-pixel-ui-pack/License.txt",
+      "attribution_required": false,
+      "source_hash": "5223c9086c245cbee564debb9c0bd95cb03d5df1e44859ed5a2fc4ccaf7790ed",
+      "runtime_hash": "5223c9086c245cbee564debb9c0bd95cb03d5df1e44859ed5a2fc4ccaf7790ed",
+      "import_date": "2026-06-13",
+      "processing_notes": "Normalized CC0 UI 9-slice panel/slot asset from Kenney Pixel UI Pack.",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/dialogue_panel.tscn",
+        "scripts/ui/dialogue_panel.gd"
+      ],
+      "designation": "temporary"
+    },
+    "ui.panel.pause": {
+      "runtime_path": "res://assets/runtime/ui/kenney_panel_pause.png",
+      "source_filename": "9-Slice/Ancient/grey.png",
+      "source_page": "https://kenney.nl/assets/pixel-ui-pack",
+      "source_domain": "kenney.nl",
+      "creator_name": "Kenney Vleugels",
+      "asset_pack_name": "Kenney Pixel UI Pack",
+      "asset_pack_version": "1",
+      "license_name": "CC0 1.0",
+      "license_proof_path": "res://third_party/assets/kenney-pixel-ui-pack/License.txt",
+      "attribution_required": false,
+      "source_hash": "4b6eadb1565f2b7890001b19e978eaf64830efa618dae554b43d0af4122fccde",
+      "runtime_hash": "4b6eadb1565f2b7890001b19e978eaf64830efa618dae554b43d0af4122fccde",
+      "import_date": "2026-06-13",
+      "processing_notes": "Normalized CC0 UI 9-slice panel/slot asset from Kenney Pixel UI Pack.",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/pause_menu.tscn",
+        "scripts/ui/pause_menu.gd"
+      ],
+      "designation": "temporary"
+    },
+    "ui.panel.inventory": {
+      "runtime_path": "res://assets/runtime/ui/kenney_panel_inventory.png",
+      "source_filename": "9-Slice/Ancient/grey.png",
+      "source_page": "https://kenney.nl/assets/pixel-ui-pack",
+      "source_domain": "kenney.nl",
+      "creator_name": "Kenney Vleugels",
+      "asset_pack_name": "Kenney Pixel UI Pack",
+      "asset_pack_version": "1",
+      "license_name": "CC0 1.0",
+      "license_proof_path": "res://third_party/assets/kenney-pixel-ui-pack/License.txt",
+      "attribution_required": false,
+      "source_hash": "4b6eadb1565f2b7890001b19e978eaf64830efa618dae554b43d0af4122fccde",
+      "runtime_hash": "4b6eadb1565f2b7890001b19e978eaf64830efa618dae554b43d0af4122fccde",
+      "import_date": "2026-06-13",
+      "processing_notes": "Normalized CC0 UI 9-slice panel/slot asset from Kenney Pixel UI Pack.",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/inventory_panel.tscn",
+        "scripts/ui/inventory_panel.gd"
+      ],
+      "designation": "temporary"
+    },
+    "ui.panel.journal": {
+      "runtime_path": "res://assets/runtime/ui/kenney_panel_journal.png",
+      "source_filename": "9-Slice/Ancient/grey.png",
+      "source_page": "https://kenney.nl/assets/pixel-ui-pack",
+      "source_domain": "kenney.nl",
+      "creator_name": "Kenney Vleugels",
+      "asset_pack_name": "Kenney Pixel UI Pack",
+      "asset_pack_version": "1",
+      "license_name": "CC0 1.0",
+      "license_proof_path": "res://third_party/assets/kenney-pixel-ui-pack/License.txt",
+      "attribution_required": false,
+      "source_hash": "4b6eadb1565f2b7890001b19e978eaf64830efa618dae554b43d0af4122fccde",
+      "runtime_hash": "4b6eadb1565f2b7890001b19e978eaf64830efa618dae554b43d0af4122fccde",
+      "import_date": "2026-06-13",
+      "processing_notes": "Normalized CC0 UI 9-slice panel/slot asset from Kenney Pixel UI Pack.",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/journal_panel.tscn",
+        "scripts/ui/journal_panel.gd"
+      ],
+      "designation": "temporary"
+    },
+    "ui.panel.title": {
+      "runtime_path": "res://assets/runtime/ui/kenney_panel_title.png",
+      "source_filename": "9-Slice/Ancient/white.png",
+      "source_page": "https://kenney.nl/assets/pixel-ui-pack",
+      "source_domain": "kenney.nl",
+      "creator_name": "Kenney Vleugels",
+      "asset_pack_name": "Kenney Pixel UI Pack",
+      "asset_pack_version": "1",
+      "license_name": "CC0 1.0",
+      "license_proof_path": "res://third_party/assets/kenney-pixel-ui-pack/License.txt",
+      "attribution_required": false,
+      "source_hash": "2808f3d552cdfeb47b272589b1ffef3f98d1f54d6e63abf5941abdad5d22fb53",
+      "runtime_hash": "2808f3d552cdfeb47b272589b1ffef3f98d1f54d6e63abf5941abdad5d22fb53",
+      "import_date": "2026-06-13",
+      "processing_notes": "Normalized CC0 UI 9-slice panel/slot asset from Kenney Pixel UI Pack.",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/main/title_screen.tscn",
+        "scripts/ui/title_screen.gd"
+      ],
+      "designation": "temporary"
+    },
+    "ui.panel.quest": {
+      "runtime_path": "res://assets/runtime/ui/kenney_panel_quest.png",
+      "source_filename": "9-Slice/Outline/blue.png",
+      "source_page": "https://kenney.nl/assets/pixel-ui-pack",
+      "source_domain": "kenney.nl",
+      "creator_name": "Kenney Vleugels",
+      "asset_pack_name": "Kenney Pixel UI Pack",
+      "asset_pack_version": "1",
+      "license_name": "CC0 1.0",
+      "license_proof_path": "res://third_party/assets/kenney-pixel-ui-pack/License.txt",
+      "attribution_required": false,
+      "source_hash": "1512120bfe7b0845f8c3120a8b1f6760997119852927d096352ef03fe3a7f10e",
+      "runtime_hash": "1512120bfe7b0845f8c3120a8b1f6760997119852927d096352ef03fe3a7f10e",
+      "import_date": "2026-06-13",
+      "processing_notes": "Normalized CC0 UI 9-slice panel/slot asset from Kenney Pixel UI Pack.",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/ui/quest_update_panel.tscn",
+        "scripts/ui/quest_update_panel.gd"
+      ],
+      "designation": "temporary"
+    }
+  }
+}

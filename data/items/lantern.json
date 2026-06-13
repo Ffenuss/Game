@@ -1,0 +1,6 @@
+{
+  "id": "lantern",
+  "name": "Фонарь",
+  "description": "Слабый фонарь для тёмных переходов.",
+  "icon_id": "item.lantern"
+}

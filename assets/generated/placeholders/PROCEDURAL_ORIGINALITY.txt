@@ -1,0 +1,3 @@
+These placeholder atlases and sprites were generated locally for this repository.
+They are original work created as temporary scaffolding and do not derive from third-party art.
+

@@ -1,0 +1,6 @@
+{
+  "id": "healing_herb",
+  "name": "Лечебная трава",
+  "description": "Мягко пахнет землёй. Восстанавливает немного здоровья.",
+  "icon_id": "item.healing_herb"
+}

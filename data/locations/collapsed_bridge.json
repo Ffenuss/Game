@@ -1,0 +1,269 @@
+{
+  "display_name": "Обрушенный мост",
+  "player_spawn": [
+    40,
+    200
+  ],
+  "layers": {
+    "ground": [
+      "............................",
+      "............................",
+      "............................",
+      "............................",
+      "............................",
+      "............................",
+      "............................",
+      "............................",
+      "............................",
+      "............................",
+      "............................",
+      "............................",
+      "............................",
+      "............................",
+      "............................",
+      "............................"
+    ],
+    "detail": [
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxmxxxxxxmxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxx,xxxxxxx",
+      "xxxxx,xxxxxxxxrxxxxxxxxxxxxx",
+      "xxxx,,xxxxxxxxxxrxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxrxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    ],
+    "road": [
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxx====xxxxxxxxxxx",
+      "xxxxxxx===============xxxxxx",
+      "x=============xxx==========x",
+      "x========xxxxxxxxxxxx======x",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    ],
+    "water": [
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxx~~~~~~~~xxxxxxxxxx",
+      "xxxxxxxxxx~~~~~~~~xxxxxxxxxx",
+      "xxxxxxxxx~~~~~~~~~~xxxxxxxxx",
+      "xxxxxxxxx~~~~~~~~~~xxxxxxxxx",
+      "xxxxxxxxxx~~~~~~~~xxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    ],
+    "wall": [
+      "############################",
+      "##xxxxxxxxxxxxxxxxxxxx######",
+      "##xxxxxxxxxxxxxxxxxxxx######",
+      "##xxxxxxxxxxxxxxxxxxxx######",
+      "##xxxxxxxxxxxxxxxxxxxx######",
+      "##xxxxxxx##xxxxxx##xxxxxxxx#",
+      "#xxxxxxxx##xxxxxx##xxxxxxxx#",
+      "#xxxxxxxx##xxxxxx##xxxxxxxx#",
+      "#xxxxxxxx##xxxxxx##xxxxxxxx#",
+      "#xxxxxxxx##xxxxxx##xxxxxxxx#",
+      "##xxxxxxx##xxxxxx##xxxxxx###",
+      "##xxxxxxxxxxxxxxxxxxxxxxx###",
+      "##xxxxxxxxxxxxxxxxxxxxxxx###",
+      "##xxxxxxxxxxxxxxxxxxxxxxx###",
+      "##xxxxxxxxxxxxxxxxxxxxxxx###",
+      "############################"
+    ],
+    "back": [
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    ],
+    "front": [
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxbbbbbbbbxxxxxxxxxx",
+      "xxxxxxxxxxbbbbbbbbxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    ]
+  },
+  "collision": [
+    "############################",
+    "##xxxxxxxxxxxxxxxxxxxx######",
+    "##xxxxxxxxxxxxxxxxxxxx######",
+    "##xxxxxxxxxxxxxxxxxxxx######",
+    "##xxxxxxxxxxxxxxxxxxxxxxxxx#",
+    "##xxxxxxx#xxxxxxxx#xxxxxxxx#",
+    "#xxxxxxxx#xxxxxxxx#xxxxxxxx#",
+    "#xxxxxxxx#xxxxxxxx#xxxxxxxx#",
+    "#xxxxxxxx#xxxxxxxx#xxxxxxxx#",
+    "#xxxxxxxx#xxxxxxxx#xxxxxxxx#",
+    "##xxxxxxx#xxxxxxxx#xxxxxx###",
+    "##xxxxxxxxxxxxxxxxxxxxxxx###",
+    "##xxxxxxxxxxxxxxxxxxxxxxx###",
+    "##xxxxxxxxxxxxxxxxxxxxxxx###",
+    "##xxxxxxxxxxxxxxxxxxxxxxx###",
+    "############################"
+  ],
+  "entities": [
+    {
+      "kind": "prop",
+      "prop_id": "dead_tree.placeholder",
+      "position": [
+        72,
+        88
+      ]
+    },
+    {
+      "kind": "prop",
+      "prop_id": "dead_tree.placeholder",
+      "position": [
+        344,
+        64
+      ]
+    },
+    {
+      "kind": "prop",
+      "prop_id": "lantern.placeholder",
+      "position": [
+        136,
+        104
+      ]
+    },
+    {
+      "kind": "dialogue",
+      "dialogue_id": "bridge_tutorial",
+      "speaker_name": "Памятка",
+      "position": [
+        56,
+        184
+      ],
+      "size": [
+        24,
+        24
+      ]
+    },
+    {
+      "kind": "checkpoint",
+      "checkpoint_id": "warm_stone_bridge",
+      "position": [
+        184,
+        184
+      ],
+      "size": [
+        24,
+        24
+      ]
+    },
+    {
+      "kind": "enemy",
+      "enemy_id": "ash_mite",
+      "scene": "ash_mite",
+      "position": [
+        160,
+        128
+      ]
+    },
+    {
+      "kind": "enemy",
+      "enemy_id": "ash_mite",
+      "scene": "ash_mite",
+      "position": [
+        304,
+        104
+      ]
+    },
+    {
+      "kind": "transition",
+      "target_location_id": "old_ledge",
+      "position": [
+        424,
+        136
+      ],
+      "size": [
+        28,
+        28
+      ]
+    }
+  ],
+  "ash_particles": [
+    {
+      "effect_id": "ash_particle",
+      "position": [
+        48,
+        40
+      ],
+      "velocity_x": -5,
+      "velocity_y": -1,
+      "amplitude": 2.2,
+      "frequency": 0.8
+    },
+    {
+      "effect_id": "ash_particle",
+      "position": [
+        196,
+        32
+      ],
+      "velocity_x": -4,
+      "velocity_y": -1,
+      "amplitude": 3.0,
+      "frequency": 1.1
+    },
+    {
+      "effect_id": "dust_particle",
+      "position": [
+        356,
+        28
+      ],
+      "velocity_x": -6,
+      "velocity_y": -1,
+      "amplitude": 2.0,
+      "frequency": 0.9
+    }
+  ]
+}

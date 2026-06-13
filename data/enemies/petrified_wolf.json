@@ -1,0 +1,13 @@
+{
+  "id": "petrified_wolf",
+  "name": "Окаменевший волк",
+  "max_health": 6,
+  "move_speed": 58.0,
+  "wander_speed": 22.0,
+  "detection_range": 128.0,
+  "attack_range": 24.0,
+  "attack_damage": 2,
+  "can_move": true,
+  "can_attack": true,
+  "asset_prefix": "petrified_wolf"
+}

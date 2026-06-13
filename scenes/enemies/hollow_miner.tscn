@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/enemies/enemy_base.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/core/health_component.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/combat/hurtbox_component.gd" id="3"]
+[ext_resource type="Script" path="res://scripts/combat/hitbox_component.gd" id="4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
+size = Vector2(18, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2"]
+size = Vector2(18, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3"]
+size = Vector2(24, 16)
+
+[node name="HollowMiner" type="CharacterBody2D"]
+script = ExtResource("1")
+enemy_id = "hollow_miner"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1")
+
+[node name="HealthComponent" type="Node" parent="."]
+script = ExtResource("2")
+
+[node name="HurtboxComponent" type="Area2D" parent="."]
+script = ExtResource("3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent"]
+shape = SubResource("RectangleShape2D_2")
+
+[node name="AttackOrigin" type="Node2D" parent="."]
+
+[node name="HitboxComponent" type="Area2D" parent="AttackOrigin"]
+script = ExtResource("4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackOrigin/HitboxComponent"]
+shape = SubResource("RectangleShape2D_3")
+
+[node name="StateMachine" type="Node" parent="."]
