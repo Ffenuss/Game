@@ -134,8 +134,8 @@ func _fill_layer(layer: TileMapLayer, rows_variant: Variant) -> void:
 	for y in rows.size():
 		var row_text := String(rows[y])
 		for x in row_text.length():
-			var char := row_text.substr(x, 1)
-			var tile_id := String(_legend.get(char, "tile.transparent"))
+			var cell_char := row_text.substr(x, 1)
+			var tile_id := String(_legend.get(cell_char, "tile.transparent"))
 			if tile_id == "tile.transparent":
 				continue
 			var coords: Vector2i = TileSetFactory.get_tile_coords(tile_id)
@@ -170,10 +170,10 @@ func _spawn_static_collisions() -> void:
 	for y in rows.size():
 		var row_text := String(rows[y])
 		for x in row_text.length():
-			var char := row_text.substr(x, 1)
-			if char == "." or char == " ":
+			var cell_char := row_text.substr(x, 1)
+			if cell_char == "." or cell_char == " ":
 				continue
-			var tile_id := String(_legend.get(char, "tile.transparent"))
+			var tile_id := String(_legend.get(cell_char, "tile.transparent"))
 			if tile_id == "tile.transparent":
 				continue
 			if not TileSetFactory.is_solid_tile(tile_id):

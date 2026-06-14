@@ -5,7 +5,7 @@ signal closed()
 signal advance_requested()
 
 @onready var background: Node = $Panel
-@onready var speaker_label: Label = $Panel/VBox/SpeakerLabel
+@onready var speaker_label: Label = $Panel/VBox/Header/SpeakerLabel
 @onready var body_label: RichTextLabel = $Panel/VBox/BodyLabel
 @onready var portrait: TextureRect = $Panel/VBox/Header/Portrait
 @onready var continue_button: Button = $Panel/VBox/ContinueButton

@@ -55,8 +55,8 @@ func clear_player() -> void:
 	_player = null
 
 
-func set_interaction_prompt(visible: bool, prompt_text: String) -> void:
-	interact_button.visible = visible
+func set_interaction_prompt(is_visible: bool, prompt_text: String) -> void:
+	interact_button.visible = is_visible
 	prompt_label.text = prompt_text if prompt_text != "" else "Взаимод."
 
 
