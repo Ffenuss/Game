@@ -2,6 +2,8 @@
 
 Read these first before editing:
 
+- [docs/FULL_GAME_PRODUCTION_PLAN.md](docs/FULL_GAME_PRODUCTION_PLAN.md)
+- [docs/CHAPTER_1_DESIGN.md](docs/CHAPTER_1_DESIGN.md)
 - [docs/CURRENT_PROJECT_STATUS.md](docs/CURRENT_PROJECT_STATUS.md)
 - [docs/RELEASE_AUDIT.md](docs/RELEASE_AUDIT.md)
 - [docs/NEXT_DEVELOPMENT_PLAN.md](docs/NEXT_DEVELOPMENT_PLAN.md)

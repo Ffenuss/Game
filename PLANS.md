@@ -2,16 +2,15 @@
 
 ## Current Phase
 
-Current-state audit completed; shared UI/presentation pass landed; next safe milestone is Android export prep and device QA.
+Current-state audit completed; M1 visual rescue pass is in progress; the immediate goal is to make the first chapter screenshot read like a real game instead of a gray prototype.
 
 ## Current Diagnosis
 
-- Working: the repository already has a playable Android-first Godot vertical slice, modular code, an asset pipeline, and a prior documentation base.
 - Working: the repository already has a playable Android-first Godot vertical slice, modular code, an asset pipeline, and a strong documentation base.
 - Incomplete: the project still lacks a committed Android export preset and device-side QA has not been completed in this turn.
 - Broken or risky: the slice is playable but still needs real-device verification for HUD spacing, export flow, and final screenshot readability.
-- Planned improvement: finish one focused UI/presentation pass because that has the highest visible impact without widening gameplay scope, then move to export prep.
-- Current focus: the shared UI skin/helper and HUD compaction are now landed; the next focus is Android export preparation.
+- Planned improvement: finish the visual rescue pass by expanding and reframing the first location and tightening the HUD, then move to export prep.
+- Current focus: the first location, dark framing, and HUD composition are being updated so the screen no longer looks like a test room.
 - Status after the previous documentation phase: the permanent documentation set exists and future tasks are pointed at the correct canonical rules.
 
 ## Completed Steps
@@ -46,10 +45,11 @@ Current-state audit completed; shared UI/presentation pass landed; next safe mil
 - Confirmed the project still has no committed `export_presets.cfg`.
 - Confirmed a temporary headless Godot 4.6.3 binary is available under `/tmp/godot-4.6.3-arm64/`.
 - Created `docs/CURRENT_PROJECT_STATUS.md` and `docs/NEXT_DEVELOPMENT_PLAN.md` to make the current readiness and next milestone explicit.
+- Created `docs/FULL_GAME_PRODUCTION_PLAN.md` and `docs/CHAPTER_1_DESIGN.md` to define the first chapter and the longer production path.
 
 ## Next Safe Steps
 
-1. Validate the finished UI/presentation pass and record the exact results.
+1. Finish the M1 visual rescue pass and record the exact results.
 2. Move to Android export prep with a committed `export_presets.cfg`.
 3. Run Android device-side screenshot and control QA once export prep is in place.
 
@@ -60,6 +60,7 @@ Current-state audit completed; shared UI/presentation pass landed; next safe mil
 - Android export setup still needs verification in a later pass.
 - The repository does not yet have a committed Android export preset.
 - No asset import or gameplay work was performed in the documentation-focused phase.
+- The current visual rescue pass is still being validated after the location/HUD adjustments.
 
 ## Validation Results
 
@@ -94,6 +95,12 @@ Current-state audit completed; shared UI/presentation pass landed; next safe mil
   - `git status --short --branch`
   - `find scenes`, `find scripts`, `find data`, `find resources`, `find tools`
   - inspected `project.godot`, main/title/player/HUD scenes, core scripts, location data, asset manifest, and export preset presence
+- JSON layout sanity checks were run on `data/locations/collapsed_bridge.json` to verify row lengths after the visual rescue changes.
+- Current rescue-pass validation also passed:
+  - `git diff --check` exit `0`
+  - `validate_project_structure.gd` exit `0`
+  - `validate_asset_manifest.gd` exit `0`
+  - `validate_runtime_smoke.gd` exit `0`
 
 ## Manual Android Testing Requests
 
@@ -116,6 +123,7 @@ Current-state audit completed; shared UI/presentation pass landed; next safe mil
 - Root config: `project.godot`, `.gitignore`, `AGENTS.md`, `PLANS.md`, `README.md`
 - Docs: `docs/*.md` including architecture, asset policy, art bible, world bible, roadmap, Android testing, decisions, changelog, replacement guide, environment report, blockers, asset requests, release audit notes, plus the new game bible, source policy, license policy, Godot rules, Android rules, visual style, Codex workflow, production checklists, and source update policy
 - Docs: `docs/*.md` including architecture, asset policy, art bible, world bible, roadmap, Android testing, decisions, changelog, replacement guide, environment report, blockers, asset requests, release audit notes, plus the new game bible, source policy, license policy, Godot rules, Android rules, visual style, Codex workflow, production checklists, source update policy, current project status, and next development plan
+- Current rescue-pass files: `data/locations/collapsed_bridge.json`, `scenes/main/main.tscn`, `scenes/ui/mobile_hud.tscn`, `scripts/ui/mobile_hud.gd`, `scripts/world/location_scene.gd`, `docs/CHANGELOG.md`, `docs/CURRENT_PROJECT_STATUS.md`, `docs/NEXT_DEVELOPMENT_PLAN.md`, `docs/RELEASE_AUDIT.md`, `docs/VISUAL_QA.md`, `docs/FULL_GAME_PRODUCTION_PLAN.md`, `docs/CHAPTER_1_DESIGN.md`
 - Scripts: `scripts/autoload/`, `scripts/core/`, `scripts/player/`, `scripts/enemies/`, `scripts/npc/`, `scripts/combat/`, `scripts/dialogue/`, `scripts/quests/`, `scripts/ui/`, `scripts/world/`, `scripts/effects/`
 - Scenes: `scenes/boot/`, `scenes/main/`, `scenes/player/`, `scenes/enemies/`, `scenes/npc/`, `scenes/ui/`, `scenes/locations/`
 - Data: `data/assets/`, `data/dialogues/`, `data/enemies/`, `data/items/`, `data/quests/`, `data/locations/`

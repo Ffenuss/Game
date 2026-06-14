@@ -22,3 +22,10 @@
 - Placeholder art is still intentionally simple and generated.
 - Some world props are still temporary silhouettes.
 - The current slice is visually improved, but not final-art complete.
+
+## M1 visual rescue pass focus
+
+- The next screenshot should show more of `Обрушенный мост` around the player.
+- The HUD should stay pinned to the corners and not sit over the bridge or the bridge exit.
+- The bridge path, checkpoint, and tutorial prompt should remain readable at a glance.
+- The gray or editor-like background feeling should be strongly reduced by the wider location framing and dark backdrop.

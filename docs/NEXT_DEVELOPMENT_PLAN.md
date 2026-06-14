@@ -1,34 +1,36 @@
 # Следующий этап разработки
 
-The UI/presentation consistency pass was implemented in this task. The roadmap below starts with the next milestone after that pass.
+This roadmap now starts from the current state of the repository after the production bible and chapter design work. The next highest-impact milestone is the visual rescue pass that makes the first screenshot read like a real game.
 
 ## 1. Immediate next milestone
 
-**Android export preset and release engineering prep.**
+**M1. Visual rescue pass**
 
-This milestone is intentionally narrow: it does not add gameplay. It makes the repository export-ready for Android without committing APK/AAB/keystores.
+This milestone is intentionally narrow: it does not add new gameplay systems. It fixes the visible composition so the current slice stops reading as a debug room.
 
 ## 2. Why this milestone comes first
 
 - The game loop is already playable.
-- The biggest remaining release blocker is export readiness, not feature count.
-- A committed export preset is required before Android release discipline can tighten further.
-- This work has low gameplay risk and high operational value.
-- The visual pass is already in place, so the next safe step is build/export infrastructure.
+- The next screenshot is still the clearest proof of quality for this slice.
+- The current visual composition is the main thing making the project feel unfinished.
+- The screenshot must improve before export prep and device QA can be judged fairly.
+- This work has low systemic risk and very high visible impact.
 
 ## 3. Tasks for this milestone
 
-- Create a safe committed `export_presets.cfg` for Android.
-- Document package name, version naming, and signing expectations.
-- Verify the project settings that matter for Android export.
-- Update Android release documentation so the export path is explicit.
-- Keep APK/AAB/keystores out of the repository.
+- Expand and reframe the first location so it fills the screen more naturally.
+- Move the player camera view away from the prototype-room feel.
+- Compact and separate the HUD so it no longer sits in the central play area.
+- Strengthen the dark-fantasy backdrop and framing.
+- Keep the scene readable on Android while preserving the existing loop.
 
 ## 4. Files likely to change
 
-- `project.godot`
-- `export_presets.cfg`
-- `docs/ANDROID_RELEASE.md`
+- `data/locations/collapsed_bridge.json`
+- `scenes/main/main.tscn`
+- `scenes/ui/mobile_hud.tscn`
+- `scripts/ui/mobile_hud.gd`
+- `scripts/world/location_scene.gd`
 - `docs/RELEASE_AUDIT.md`
 - `docs/CHANGELOG.md`
 - `docs/BLOCKERS.md`
@@ -36,10 +38,11 @@ This milestone is intentionally narrow: it does not add gameplay. It makes the r
 
 ## 5. Done criteria
 
-- `export_presets.cfg` exists and is committed.
-- Android export settings are documented and reproducible.
-- The repo still does not contain APK/AAB/keystore artifacts.
-- The export workflow is ready for later Android device verification.
+- The first screenshot no longer reads as a gray debug room.
+- The HUD no longer covers the center of gameplay.
+- The first location feels more like an intentional chapter opening.
+- The current playable loop still works after the visual pass.
+- No forbidden assets or engine features are introduced.
 
 ## 6. Validation plan
 
@@ -47,14 +50,13 @@ This milestone is intentionally narrow: it does not add gameplay. It makes the r
 - Run `tools/validate_project_structure.gd`.
 - Run `tools/validate_asset_manifest.gd` if asset references change.
 - Run `tools/validate_runtime_smoke.gd` if the scenes/scripts still parse.
-- Verify `export_presets.cfg` parses cleanly in the repository context.
-- Review the exported settings in Git status before committing.
+- Review the updated HUD and location layout in the Godot Editor or Android preview.
 - If Android device QA is not available, record the limitation honestly and provide manual test steps.
 
 ## 7. Next milestones after this one
 
-1. Android device-side screenshot and control QA.
-2. Save/checkpoint verification on device.
-3. Combat feel tuning and failure-state polish.
-4. Lightweight audio feedback pass if safe CC0 assets or generated SFX are available.
-5. Optional final visual polish after real-device review.
+1. Android export preset and release engineering prep.
+2. Android device-side screenshot and control QA.
+3. Save/checkpoint verification on device.
+4. Combat feel tuning and failure-state polish.
+5. Lightweight audio feedback pass if safe CC0 assets or generated SFX are available.

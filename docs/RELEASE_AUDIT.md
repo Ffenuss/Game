@@ -35,7 +35,7 @@ Status: PARTIAL
 
 Status: PARTIAL
 
-- Evidence: `scripts/player/player.gd` sets follow camera zoom; `scenes/main/main.tscn` already adds a dark backdrop and vignette.
+- Evidence: `scripts/player/player.gd` sets follow camera zoom; `scenes/main/main.tscn` adds a dark backdrop and vignette; `data/locations/collapsed_bridge.json` has been widened and re-centered for the M1 visual rescue pass.
 - Missing: device-side screenshot confirmation that the playfield composition feels intentional.
 - Next action: confirm the updated HUD does not compete with the central play area.
 
@@ -43,9 +43,9 @@ Status: PARTIAL
 
 Status: PARTIAL
 
-- Evidence: `data/locations/collapsed_bridge.json`, `data/locations/old_ledge.json`, `scripts/world/location_scene.gd`.
+- Evidence: `data/locations/collapsed_bridge.json` now carries the widened first-chapter framing, `data/locations/old_ledge.json`, `scripts/world/location_scene.gd`.
 - Missing: final phone-sized readability pass and later content expansion.
-- Next action: keep the current compact map readable after the UI update.
+- Next action: keep the current compact map readable after the UI update and verify the screenshot no longer reads like a test room.
 
 ## 6. Visual style
 
@@ -173,7 +173,7 @@ Status: PARTIAL
 
 - Evidence: dedicated branch `codex/bootstrap-rpg`, incremental commit history, no forbidden build artifacts in the tree.
 - Missing: export preset, Android build verification, and final release checkpoint discipline.
-- Next action: once the UI pass is validated, move to Android export prep and device QA.
+- Next action: once the M1 visual rescue pass is validated, move to Android export prep and device QA.
 
 ## Release conclusion
 

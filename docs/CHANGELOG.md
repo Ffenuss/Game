@@ -23,3 +23,6 @@
 - Added a shared UI styling helper and applied it to title, pause, dialogue, inventory, journal, quest update, and mobile HUD surfaces.
 - Compacted the mobile HUD further, including a smaller joystick, tighter action cluster, and cleaner status panel presentation.
 - Regenerated the procedural UI atlas and added a full-screen vignette backdrop asset for mobile framing.
+- Created the full game production plan and Chapter 1 design docs for the first real chapter direction.
+- Reframed the first location `Обрушенный мост` into a wider, more atmospheric scene so the screenshot stops reading like a rectangular test room.
+- Tightened the mobile HUD again for the visual rescue pass, including smaller panels and more outward corner anchoring.

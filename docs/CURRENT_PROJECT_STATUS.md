@@ -42,7 +42,7 @@
 - HUD уже вынесен в отдельную сцену.
 - Есть health/stamina панели.
 - Есть interaction prompt.
-- HUD уже компактнее, чем в раннем прототипе.
+- HUD уже компактнее, чем в раннем прототипе, и текущий rescue pass прижимает его ещё сильнее к углам.
 - Есть общий UI helper для title, pause, dialogue, inventory, journal, quest toast и HUD.
 
 ### World/level
@@ -51,6 +51,7 @@
 - Есть переход в `old_ledge`.
 - Уровни построены на `TileMapLayer`.
 - Есть сцены и данные для дальнейшего расширения карты.
+- `Обрушенный мост` был расширен и переформатирован для visual rescue pass, чтобы первый скриншот читался как реальная локация.
 
 ### Combat
 
@@ -126,11 +127,11 @@
 
 ## 3. Что работает, но требует полировки
 
-- HUD ещё выглядит более техническим, чем финальным.
-- Mobile buttons нужно продолжать уплотнять и приводить к единому визуальному языку.
+- HUD уже компактнее, но его нужно проверить на реальном Android-экране.
+- Mobile buttons уже стали меньше и дальше от центра, но device-side readability ещё не подтверждена.
 - Dialog, inventory, journal и pause menu уже есть, но их presentation layer всё ещё ближе к prototype UI, чем к release UI.
-- Камера и framing уже рабочие, но визуально ещё можно сделать более выразительными.
-- Уровень читаемый, но placeholder art всё ещё доминирует.
+- Камера и framing уже рабочие, но визуально ещё можно сделать более выразительными на устройстве.
+- Уровень стал шире и атмосфернее, но placeholder art всё ещё доминирует.
 
 ## 4. Что не готово
 
@@ -163,12 +164,12 @@
 
 ## 7. Следующий лучший этап
 
-**Android export prep and device QA**.
+**Проверка скриншота на Android для M1 visual rescue pass, затем Android export prep**.
 
 Почему именно он:
 
 - Core loop уже существует и не требует расширения ради этой правки.
-- UI helper и компактный HUD pass уже landed.
-- Следующий высокий риск теперь в export readiness и hardware verification.
-- Этот этап не раздувает scope и может ускорить движение к Android release candidate discipline.
-- После этого следующая по приоритету стадия станет Android device QA и export hardening.
+- The current visual rescue pass is now implemented and should be verified before build/export infrastructure work resumes.
+- The biggest visible blocker is still the screenshot composition, which must be checked on Android hardware.
+- A committed export preset is still required before Android release discipline can tighten further.
+- This work has low gameplay risk and high visible impact.
