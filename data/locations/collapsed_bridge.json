@@ -1,161 +1,161 @@
 {
   "display_name": "Обрушенный мост",
   "player_spawn": [
-    40,
+    176,
     200
   ],
   "layers": {
     "ground": [
-      "............................",
-      "............................",
-      "............................",
-      "............................",
-      "............................",
-      "............................",
-      "............................",
-      "............................",
-      "............................",
-      "............................",
-      "............................",
-      "............................",
-      "............................",
-      "............................",
-      "............................",
-      "............................"
+      "....................................",
+      "....................................",
+      "....................................",
+      "....................................",
+      "....................................",
+      "....................................",
+      "....................................",
+      "....................................",
+      "....................................",
+      "....................................",
+      "....................................",
+      "....................................",
+      "....................................",
+      "....................................",
+      "....................................",
+      "...................................."
     ],
     "detail": [
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxmxxxxxxmxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxx,xxxxxxx",
-      "xxxxx,xxxxxxxxrxxxxxxxxxxxxx",
-      "xxxx,,xxxxxxxxxxrxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxrxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxmxxxxxxmxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx,xxxxxxxxxxx",
+      "xxxxxxx,xxxxxxxxrxxxxxxxxxxxxxxxxxxx",
+      "xxxxxx,,xxxxxxxxxxrxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxrxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     ],
     "road": [
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxx====xxxxxxxxxxx",
-      "xxxxxxx===============xxxxxx",
-      "x=============xxx==========x",
-      "x========xxxxxxxxxxxx======x",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx~~~~~~~~xxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx~~~~~~~~xxxxxxxxxx",
+      "xxxxxxxxxxxxxxx~~~~~~~~~~xxxxxxxxxxx",
+      "xxxxxxxxxxxxxxx====xxxxxxxxxxxxxxxxx",
+      "xxxxxxxx=================xxxxxxxxxxx",
+      "xxxxx============xxx==========xxxxxx",
+      "xxxxx========xxxxxxxxxxxx======xxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     ],
     "water": [
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxx~~~~~~~~xxxxxxxxxx",
-      "xxxxxxxxxx~~~~~~~~xxxxxxxxxx",
-      "xxxxxxxxx~~~~~~~~~~xxxxxxxxx",
-      "xxxxxxxxx~~~~~~~~~~xxxxxxxxx",
-      "xxxxxxxxxx~~~~~~~~xxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx~~~~~~~~xxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx~~~~~~~~xxxxxxxxxx",
+      "xxxxxxxxxxxxxxx~~~~~~~~~~xxxxxxxxxxx",
+      "xxxxxxxxxxxxxxx~~~~~~~~~~xxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx~~~~~~~~xxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     ],
     "wall": [
-      "############################",
-      "##xxxxxxxxxxxxxxxxxxxx######",
-      "##xxxxxxxxxxxxxxxxxxxx######",
-      "##xxxxxxxxxxxxxxxxxxxx######",
-      "##xxxxxxxxxxxxxxxxxxxx######",
-      "##xxxxxxx##xxxxxx##xxxxxxxx#",
-      "#xxxxxxxx##xxxxxx##xxxxxxxx#",
-      "#xxxxxxxx##xxxxxx##xxxxxxxx#",
-      "#xxxxxxxx##xxxxxx##xxxxxxxx#",
-      "#xxxxxxxx##xxxxxx##xxxxxxxx#",
-      "##xxxxxxx##xxxxxx##xxxxxx###",
-      "##xxxxxxxxxxxxxxxxxxxxxxx###",
-      "##xxxxxxxxxxxxxxxxxxxxxxx###",
-      "##xxxxxxxxxxxxxxxxxxxxxxx###",
-      "##xxxxxxxxxxxxxxxxxxxxxxx###",
-      "############################"
+      "####################################",
+      "######xxxxxxxxxxxxxxxxxxxx##########",
+      "######xxxxxxxxxxxxxxxxxxxx##########",
+      "######xxxxxxxxxxxxxxxxxxxx##########",
+      "######xxxxxxxxxxxxxxxxxxxx##########",
+      "######xxxxxxx##xxxxxx##xxxxxxxx#####",
+      "#####xxxxxxxx##xxxxxx##xxxxxxxx#####",
+      "#####xxxxxxxx##xxxxxx##xxxxxxxx#####",
+      "#####xxxxxxxx##xxxxxx##xxxxxxxx#####",
+      "#####xxxxxxxx##xxxxxx##xxxxxxxx#####",
+      "######xxxxxxx##xxxxxx##xxxxxx#######",
+      "######xxxxxxxxxxxxxxxxxxxxxxx#######",
+      "######xxxxxxxxxxxxxxxxxxxxxxx#######",
+      "######xxxxxxxxxxxxxxxxxxxxxxx#######",
+      "######xxxxxxxxxxxxxxxxxxxxxxx#######",
+      "####################################"
     ],
     "back": [
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     ],
     "front": [
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxbbbbbbbbxxxxxxxxxx",
-      "xxxxxxxxxxbbbbbbbbxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxbbbbbbbbxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxbbbbbbbbxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     ]
   },
   "collision": [
-    "############################",
-    "##xxxxxxxxxxxxxxxxxxxx######",
-    "##xxxxxxxxxxxxxxxxxxxx######",
-    "##xxxxxxxxxxxxxxxxxxxx######",
-    "##xxxxxxxxxxxxxxxxxxxxxxxxx#",
-    "##xxxxxxx#xxxxxxxx#xxxxxxxx#",
-    "#xxxxxxxx#xxxxxxxx#xxxxxxxx#",
-    "#xxxxxxxx#xxxxxxxx#xxxxxxxx#",
-    "#xxxxxxxx#xxxxxxxx#xxxxxxxx#",
-    "#xxxxxxxx#xxxxxxxx#xxxxxxxx#",
-    "##xxxxxxx#xxxxxxxx#xxxxxx###",
-    "##xxxxxxxxxxxxxxxxxxxxxxx###",
-    "##xxxxxxxxxxxxxxxxxxxxxxx###",
-    "##xxxxxxxxxxxxxxxxxxxxxxx###",
-    "##xxxxxxxxxxxxxxxxxxxxxxx###",
-    "############################"
+    "####################################",
+    "######xxxxxxxxxxxxxxxxxxxx##########",
+    "######xxxxxxxxxxxxxxxxxxxx##########",
+    "######xxxxxxxxxxxxxxxxxxxx##########",
+    "######xxxxxxxxxxxxxxxxxxxx##########",
+    "######xxxxxxx##xxxxxx##xxxxxxxx#####",
+    "#####xxxxxxxx##xxxxxx##xxxxxxxx#####",
+    "#####xxxxxxxx##xxxxxx##xxxxxxxx#####",
+    "#####xxxxxxxx##xxxxxx##xxxxxxxx#####",
+    "#####xxxxxxxx##xxxxxx##xxxxxxxx#####",
+    "######xxxxxxx##xxxxxx##xxxxxx#######",
+    "######xxxxxxxxxxxxxxxxxxxxxxx#######",
+    "######xxxxxxxxxxxxxxxxxxxxxxx#######",
+    "######xxxxxxxxxxxxxxxxxxxxxxx#######",
+    "######xxxxxxxxxxxxxxxxxxxxxxx#######",
+    "####################################"
   ],
   "entities": [
     {
       "kind": "prop",
       "prop_id": "dead_tree.placeholder",
       "position": [
-        72,
+        136,
         88
       ]
     },
@@ -163,7 +163,7 @@
       "kind": "prop",
       "prop_id": "dead_tree.placeholder",
       "position": [
-        344,
+        408,
         64
       ]
     },
@@ -171,7 +171,7 @@
       "kind": "prop",
       "prop_id": "lantern.placeholder",
       "position": [
-        136,
+        200,
         104
       ]
     },
@@ -180,7 +180,7 @@
       "dialogue_id": "bridge_tutorial",
       "speaker_name": "Памятка",
       "position": [
-        56,
+        120,
         184
       ],
       "size": [
@@ -192,7 +192,7 @@
       "kind": "checkpoint",
       "checkpoint_id": "warm_stone_bridge",
       "position": [
-        184,
+        248,
         184
       ],
       "size": [
@@ -205,7 +205,7 @@
       "enemy_id": "ash_mite",
       "scene": "ash_mite",
       "position": [
-        160,
+        224,
         128
       ]
     },
@@ -214,7 +214,7 @@
       "enemy_id": "ash_mite",
       "scene": "ash_mite",
       "position": [
-        304,
+        368,
         104
       ]
     },
@@ -222,7 +222,7 @@
       "kind": "transition",
       "target_location_id": "old_ledge",
       "position": [
-        424,
+        416,
         136
       ],
       "size": [
@@ -235,30 +235,30 @@
     {
       "effect_id": "ash_particle",
       "position": [
-        48,
-        40
-      ],
-      "velocity_x": -5,
-      "velocity_y": -1,
-      "amplitude": 2.2,
-      "frequency": 0.8
-    },
-    {
-      "effect_id": "ash_particle",
-      "position": [
-        196,
-        32
+        104,
+        44
       ],
       "velocity_x": -4,
       "velocity_y": -1,
-      "amplitude": 3.0,
-      "frequency": 1.1
+      "amplitude": 2.4,
+      "frequency": 1.0
     },
     {
       "effect_id": "dust_particle",
       "position": [
-        356,
-        28
+        232,
+        44
+      ],
+      "velocity_x": -5,
+      "velocity_y": -1,
+      "amplitude": 2.8,
+      "frequency": 0.9
+    },
+    {
+      "effect_id": "ash_particle",
+      "position": [
+        336,
+        36
       ],
       "velocity_x": -6,
       "velocity_y": -1,

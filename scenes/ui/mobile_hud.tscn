@@ -20,8 +20,8 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 offset_left = 8.0
 offset_top = 8.0
-offset_right = 186.0
-offset_bottom = 42.0
+offset_right = 178.0
+offset_bottom = 38.0
 texture = ExtResource("3")
 patch_margin_left = 12
 patch_margin_top = 12
@@ -34,17 +34,17 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 offset_left = 16.0
 offset_top = 12.0
-offset_right = 172.0
-offset_bottom = 33.0
+offset_right = 164.0
+offset_bottom = 31.0
 
 [node name="HealthBar" type="TextureProgressBar" parent="Bars"]
 position = Vector2(0, 0)
-size = Vector2(156, 8)
+size = Vector2(148, 7)
 value = 100.0
 
 [node name="StaminaBar" type="TextureProgressBar" parent="Bars"]
 position = Vector2(0, 12)
-size = Vector2(156, 8)
+size = Vector2(148, 7)
 value = 100.0
 
 [node name="PauseButton" type="Button" parent="."]
@@ -52,22 +52,22 @@ anchor_left = 1.0
 anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 0.0
-offset_left = -52.0
+offset_left = -46.0
 offset_top = 8.0
-offset_right = -10.0
-offset_bottom = 28.0
+offset_right = -12.0
+offset_bottom = 24.0
 text = "Пау"
-custom_minimum_size = Vector2(42, 20)
+custom_minimum_size = Vector2(38, 18)
 
 [node name="ActionFrame" type="NinePatchRect" parent="."]
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -142.0
-offset_top = -96.0
-offset_right = -12.0
-offset_bottom = -12.0
+offset_left = -134.0
+offset_top = -88.0
+offset_right = -10.0
+offset_bottom = -10.0
 texture = ExtResource("4")
 patch_margin_left = 12
 patch_margin_top = 12
@@ -80,25 +80,25 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -132.0
-offset_top = -86.0
-offset_right = -20.0
-offset_bottom = -18.0
+offset_left = -126.0
+offset_top = -82.0
+offset_right = -18.0
+offset_bottom = -16.0
 columns = 2
 theme_override_constants/h_separation = 3
 theme_override_constants/v_separation = 3
 
 [node name="AttackLightButton" type="Button" parent="Buttons"]
-custom_minimum_size = Vector2(52, 24)
+custom_minimum_size = Vector2(48, 22)
 
 [node name="AttackHeavyButton" type="Button" parent="Buttons"]
-custom_minimum_size = Vector2(52, 24)
+custom_minimum_size = Vector2(48, 22)
 
 [node name="DodgeButton" type="Button" parent="Buttons"]
-custom_minimum_size = Vector2(52, 24)
+custom_minimum_size = Vector2(48, 22)
 
 [node name="InteractButton" type="Button" parent="Buttons"]
-custom_minimum_size = Vector2(52, 24)
+custom_minimum_size = Vector2(48, 22)
 
 [node name="PromptLabel" type="Label" parent="Buttons/InteractButton"]
 position = Vector2(1, 5)
@@ -107,10 +107,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="HealButton" type="Button" parent="Buttons"]
-custom_minimum_size = Vector2(52, 24)
+custom_minimum_size = Vector2(48, 22)
 
 [node name="InventoryButton" type="Button" parent="Buttons"]
-custom_minimum_size = Vector2(52, 24)
+custom_minimum_size = Vector2(48, 22)
 
 [node name="Joystick" type="Control" parent="."]
 anchor_left = 0.0

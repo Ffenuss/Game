@@ -32,8 +32,8 @@ func _ready() -> void:
 	pause_button.text = "Пау"
 	prompt_label.text = "Взаим"
 	interact_button.visible = false
-	_ui_style.apply_panel(status_frame, "ui.panel.dialogue", 0.84)
-	_ui_style.apply_panel(action_frame, "ui.panel.inventory", 0.86)
+	_ui_style.apply_panel(status_frame, "ui.panel.dialogue", 0.80)
+	_ui_style.apply_panel(action_frame, "ui.panel.inventory", 0.82)
 	_ui_style.apply_button(attack_light_button, _ui_style.ACCENT_FIRE, 9)
 	_ui_style.apply_button(attack_heavy_button, _ui_style.ACCENT_HEAVY, 9)
 	_ui_style.apply_button(dodge_button, _ui_style.ACCENT_FOG, 9)

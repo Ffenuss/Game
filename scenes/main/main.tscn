@@ -20,12 +20,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 offset_right = 640.0
 offset_bottom = 360.0
-color = Color(0.040000001, 0.050000001, 0.070000001, 1)
+color = Color(0.019999999, 0.028000001, 0.040000003, 1)
 
 [node name="BackdropVignette" type="Sprite2D" parent="BackdropLayer"]
 position = Vector2(320, 180)
 texture = ExtResource("8")
-modulate = Color(1, 1, 1, 0.9)
+modulate = Color(1, 1, 1, 1)
 
 [node name="WorldHost" type="Node2D" parent="."]
 
