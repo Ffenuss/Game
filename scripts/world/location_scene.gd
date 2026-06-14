@@ -331,7 +331,7 @@ func _spawn_player_if_needed() -> void:
 	var packed := load(player_scene_path) as PackedScene
 	if packed == null:
 		return
-		var node: PlayerCharacter = packed.instantiate() as PlayerCharacter
+	var node: PlayerCharacter = packed.instantiate() as PlayerCharacter
 	if node == null:
 		return
 	node.initialize(spawn_position, GameState.player_snapshot)
