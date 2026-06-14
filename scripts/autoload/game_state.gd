@@ -98,7 +98,10 @@ func remember_player_snapshot(snapshot: Dictionary) -> void:
 
 
 func remember_inventory_snapshot(snapshot: Array) -> void:
-	inventory_snapshot = snapshot.duplicate(true)
+	inventory_snapshot = []
+	for entry in snapshot:
+		if entry is Dictionary:
+			inventory_snapshot.append((entry as Dictionary).duplicate(true))
 	emit_signal("inventory_changed")
 
 

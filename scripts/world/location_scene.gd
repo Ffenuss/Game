@@ -262,7 +262,7 @@ func _spawn_checkpoint(entity: Dictionary, position_data: Array) -> void:
 
 
 func _spawn_transition(entity: Dictionary, position_data: Array) -> void:
-		var transition: LocationTransition = LocationTransition.new()
+	var transition: LocationTransition = LocationTransition.new()
 	transition.target_location_id = String(entity.get("target_location_id", ""))
 	transition.prompt_text = String(entity.get("prompt_text", "Перейти дальше"))
 	if position_data.size() >= 2:
@@ -281,7 +281,7 @@ func _spawn_transition(entity: Dictionary, position_data: Array) -> void:
 
 
 func _spawn_dialogue_trigger(entity: Dictionary, position_data: Array) -> void:
-		var trigger: DialogueTriggerComponent = DialogueTriggerComponent.new()
+	var trigger: DialogueTriggerComponent = DialogueTriggerComponent.new()
 	trigger.dialogue_id = String(entity.get("dialogue_id", ""))
 	trigger.speaker_name = String(entity.get("speaker_name", ""))
 	trigger.prompt_text = String(entity.get("prompt_text", "Поговорить"))

@@ -69,21 +69,21 @@ func _physics_process(delta: float) -> void:
 		_update_visual_state()
 		return
 
-		var to_player: Vector2 = _player.global_position - global_position
-		var distance: float = to_player.length()
+	var to_player: Vector2 = _player.global_position - global_position
+	var distance: float = to_player.length()
 	if distance > detection_range:
 		if can_move:
 			velocity = velocity.move_toward(Vector2.ZERO, 260.0 * delta)
 		else:
 			velocity = Vector2.ZERO
 		state = EnemyState.IDLE
-		elif can_attack and distance <= attack_range and _attack_cooldown <= 0.0:
-			_begin_attack()
-		elif can_move:
-			state = EnemyState.CHASE
-			var direction: Vector2 = to_player.normalized()
-			velocity = velocity.move_toward(direction * move_speed, 520.0 * delta)
-			_facing_flip = direction.x < 0.0
+	elif can_attack and distance <= attack_range and _attack_cooldown <= 0.0:
+		_begin_attack()
+	elif can_move:
+		state = EnemyState.CHASE
+		var direction: Vector2 = to_player.normalized()
+		velocity = velocity.move_toward(direction * move_speed, 520.0 * delta)
+		_facing_flip = direction.x < 0.0
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, 260.0 * delta)
 

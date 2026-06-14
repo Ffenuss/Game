@@ -22,9 +22,9 @@ func _run() -> void:
 		if file == null:
 			push_warning("generate_test_world: unable to read %s" % path)
 			continue
-			var parsed: Variant = JSON.parse_string(file.get_as_text())
-			if parsed is Dictionary:
-				var data: Dictionary = parsed as Dictionary
+		var parsed: Variant = JSON.parse_string(file.get_as_text())
+		if parsed is Dictionary:
+			var data: Dictionary = parsed as Dictionary
 			var entities: Array = data.get("entities", [])
 			summary.append("%s (%s, %d entities)" % [
 				path.get_file(),

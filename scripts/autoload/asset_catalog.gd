@@ -75,34 +75,55 @@ func texture(asset_id: String) -> Texture2D:
 		)
 		_texture_cache[asset_id] = atlas_texture
 		return atlas_texture
-	var texture := _load_texture(path)
-	_texture_cache[asset_id] = texture
-	return texture
+	var loaded_texture := _load_texture(path)
+	_texture_cache[asset_id] = loaded_texture
+	return loaded_texture
 
 
 func _load_texture(path: String) -> Texture2D:
 	var lower_path := path.to_lower()
 	if lower_path.ends_with(".png") or lower_path.ends_with(".jpg") or lower_path.ends_with(".jpeg") or lower_path.ends_with(".webp"):
-		var image := Image.load_from_file(path)
-		if image != null and not image.is_empty():
-			return ImageTexture.create_from_image(image)
-
-	var texture := load(path) as Texture2D
-	if texture != null:
-		return texture
+		var image_texture := _load_image_texture(path)
+		if image_texture != null:
+			return image_texture
+	else:
+		var texture := load(path) as Texture2D
+		if texture != null:
+			return texture
 
 	push_warning("AssetCatalog: runtime asset missing: %s" % path)
 	var fallback_path := resolve_path(FALLBACK_ASSET_ID)
 	if fallback_path != "":
-		var fallback_lower := fallback_path.to_lower()
-		if fallback_lower.ends_with(".png") or fallback_lower.ends_with(".jpg") or fallback_lower.ends_with(".jpeg") or fallback_lower.ends_with(".webp"):
-			var fallback_image := Image.load_from_file(fallback_path)
-			if fallback_image != null and not fallback_image.is_empty():
-				return ImageTexture.create_from_image(fallback_image)
-		var fallback_texture := load(fallback_path) as Texture2D
-		if fallback_texture != null:
-			return fallback_texture
+		var fallback_lower_path := fallback_path.to_lower()
+		if fallback_lower_path.ends_with(".png") or fallback_lower_path.ends_with(".jpg") or fallback_lower_path.ends_with(".jpeg") or fallback_lower_path.ends_with(".webp"):
+			var fallback_image_texture := _load_image_texture(fallback_path)
+			if fallback_image_texture != null:
+				return fallback_image_texture
+		else:
+			var fallback_texture := load(fallback_path) as Texture2D
+			if fallback_texture != null:
+				return fallback_texture
 	return null
+
+
+func _load_image_texture(path: String) -> Texture2D:
+	var lower_path := path.to_lower()
+	var bytes: PackedByteArray = FileAccess.get_file_as_bytes(path)
+	if bytes.is_empty():
+		return null
+	var image := Image.new()
+	var load_result := ERR_FILE_UNRECOGNIZED
+	if lower_path.ends_with(".png"):
+		load_result = image.load_png_from_buffer(bytes)
+	elif lower_path.ends_with(".jpg") or lower_path.ends_with(".jpeg"):
+		load_result = image.load_jpg_from_buffer(bytes)
+	elif lower_path.ends_with(".webp"):
+		load_result = image.load_webp_from_buffer(bytes)
+	else:
+		return null
+	if load_result != OK or image.is_empty():
+		return null
+	return ImageTexture.create_from_image(image)
 
 
 func list_ids() -> PackedStringArray:
