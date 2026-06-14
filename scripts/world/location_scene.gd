@@ -61,7 +61,7 @@ var _player_node: PlayerCharacter = null
 
 
 func _ready() -> void:
-	modulate = Color(0.80, 0.84, 0.90, 1.0)
+	modulate = Color(0.72, 0.77, 0.84, 1.0)
 	characters_layer.y_sort_enabled = true
 	front_decoration_layer.y_sort_enabled = true
 	back_decoration_layer.y_sort_enabled = true
@@ -332,7 +332,7 @@ func _spawn_player_if_needed() -> void:
 	var packed := load(player_scene_path) as PackedScene
 	if packed == null:
 		return
-		var node: PlayerCharacter = packed.instantiate() as PlayerCharacter
+	var node: PlayerCharacter = packed.instantiate() as PlayerCharacter
 	if node == null:
 		return
 	node.initialize(spawn_position, GameState.player_snapshot)

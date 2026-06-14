@@ -2782,6 +2782,27 @@
         "scenes/main/main.tscn"
       ],
       "designation": "temporary"
+    },
+    "background.world.mist": {
+      "runtime_path": "res://assets/runtime/environment/world_backdrop_mist.png",
+      "source_filename": "world_backdrop_mist.png",
+      "source_page": "local://procedural-generation",
+      "source_domain": "local",
+      "creator_name": "Codex",
+      "asset_pack_name": "Ash Dol procedural placeholders",
+      "asset_pack_version": "visual-patch-2",
+      "license_name": "Original generated placeholder",
+      "license_proof_path": "res://assets/generated/placeholders/PROCEDURAL_ORIGINALITY.txt",
+      "attribution_required": false,
+      "source_hash": "026c0f64d0c2f2696560c6c4997d79df7ffbf633360ead43fbf927b1412a2b3d",
+      "runtime_hash": "026c0f64d0c2f2696560c6c4997d79df7ffbf633360ead43fbf927b1412a2b3d",
+      "import_date": "2026-06-14",
+      "processing_notes": "Generated full-screen world backdrop with cliff silhouettes, broken ridge framing, and furnace glow to replace prototype-gray margins.",
+      "replacement_status": "temporary",
+      "usage_locations": [
+        "scenes/main/main.tscn"
+      ],
+      "designation": "temporary"
     }
   }
 }

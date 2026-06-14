@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" path="res://scenes/ui/journal_panel.tscn" id="6"]
 [ext_resource type="PackedScene" path="res://scenes/ui/quest_update_panel.tscn" id="7"]
 [ext_resource type="Texture2D" path="res://assets/runtime/ui/ui_background_vignette.png" id="8"]
+[ext_resource type="Texture2D" path="res://assets/runtime/environment/world_backdrop_mist.png" id="9"]
 
 [node name="MainRoot" type="Node"]
 script = ExtResource("1")
@@ -21,6 +22,15 @@ anchor_bottom = 1.0
 offset_right = 640.0
 offset_bottom = 360.0
 color = Color(0.019999999, 0.028000001, 0.040000003, 1)
+
+[node name="BackdropTexture" type="TextureRect" parent="BackdropLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 640.0
+offset_bottom = 360.0
+texture = ExtResource("9")
+stretch_mode = 6
+modulate = Color(1, 1, 1, 0.95)
 
 [node name="BackdropVignette" type="Sprite2D" parent="BackdropLayer"]
 position = Vector2(320, 180)

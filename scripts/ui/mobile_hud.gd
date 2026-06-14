@@ -23,14 +23,14 @@ var _ui_style := UI_STYLE_SCRIPT.new()
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
-	attack_light_button.text = "Атк"
-	attack_heavy_button.text = "Сил"
-	dodge_button.text = "Рыв"
-	interact_button.text = "Взаим"
-	heal_button.text = "Леч"
-	inventory_button.text = "Инв"
-	pause_button.text = "Пау"
-	prompt_label.text = "Взаим"
+	attack_light_button.text = "АТК"
+	attack_heavy_button.text = "СИЛ"
+	dodge_button.text = "РЫВ"
+	interact_button.text = "ВЗ"
+	heal_button.text = "ЛЕЧ"
+	inventory_button.text = "ИНВ"
+	pause_button.text = "ПАУ"
+	prompt_label.text = "ВЗ"
 	interact_button.visible = false
 	_ui_style.apply_panel(status_frame, "ui.panel.dialogue", 0.80)
 	_ui_style.apply_panel(action_frame, "ui.panel.inventory", 0.82)
@@ -51,7 +51,7 @@ func _ready() -> void:
 	joystick.direction_changed.connect(_on_joystick_direction_changed)
 	GameState.interaction_prompt_changed.connect(_on_interaction_prompt_changed)
 	_set_default_textures()
-	_ui_style.apply_label(prompt_label, 9, _ui_style.FONT_SECONDARY, true)
+	_ui_style.apply_label(prompt_label, 7, _ui_style.FONT_SECONDARY, true)
 	_on_interaction_prompt_changed(false, "")
 
 

@@ -11,7 +11,7 @@ enum PlayerState { IDLE, WALK, ATTACK_LIGHT, ATTACK_HEAVY, DODGE, HIT, DEAD }
 @export var dodge_stamina_cost: float = 18.0
 @export var light_attack_stamina_cost: float = 14.0
 @export var heavy_attack_stamina_cost: float = 28.0
-@export var camera_zoom: Vector2 = Vector2(1.22, 1.22)
+@export var camera_zoom: Vector2 = Vector2(1.62, 1.62)
 @export var light_attack_damage: int = 2
 @export var heavy_attack_damage: int = 4
 @export var light_attack_windup: float = 0.08

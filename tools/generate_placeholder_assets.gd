@@ -1,9 +1,12 @@
 extends SceneTree
 
 const GENERATED_DIR := "res://assets/generated/placeholders"
+const GENERATED_ENVIRONMENT_DIR := "res://assets/generated/placeholders/environment"
 const RUNTIME_UI_DIR := "res://assets/runtime/ui"
+const RUNTIME_ENVIRONMENT_DIR := "res://assets/runtime/environment"
 const UI_ATLAS_SIZE := Vector2i(256, 256)
 const BACKDROP_SIZE := Vector2i(640, 360)
+const WORLD_BACKDROP_SIZE := Vector2i(640, 360)
 
 const GRAPHITE_DARK := Color(0.05, 0.05, 0.06, 1.0)
 const GRAPHITE := Color(0.10, 0.11, 0.13, 1.0)
@@ -33,13 +36,16 @@ func _run() -> void:
 	_ensure_directories()
 	_generate_ui_atlas()
 	_generate_backdrop()
+	_generate_world_backdrop()
 	print("Placeholder generation completed.")
 	quit(0)
 
 
 func _ensure_directories() -> void:
 	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(GENERATED_DIR))
+	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(GENERATED_ENVIRONMENT_DIR))
 	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(RUNTIME_UI_DIR))
+	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(RUNTIME_ENVIRONMENT_DIR))
 
 
 func _generate_ui_atlas() -> void:
@@ -67,6 +73,81 @@ func _generate_backdrop() -> void:
 			color.a = 1.0
 			image.set_pixel(x, y, color)
 	_save_image(image, "%s/ui_background_vignette.png" % GENERATED_DIR, "%s/ui_background_vignette.png" % RUNTIME_UI_DIR)
+
+
+func _generate_world_backdrop() -> void:
+	var image := Image.create(WORLD_BACKDROP_SIZE.x, WORLD_BACKDROP_SIZE.y, false, Image.FORMAT_RGBA8)
+	var rng := RandomNumberGenerator.new()
+	rng.seed = 0xA5D0F0
+	for y in range(WORLD_BACKDROP_SIZE.y):
+		var v: float = float(y) / float(WORLD_BACKDROP_SIZE.y - 1)
+		var sky_mix: float = clamp(1.0 - abs(v - 0.42) * 1.9, 0.0, 1.0)
+		var base: Color = NIGHT.lerp(GRAPHITE_DARK, 0.24 + v * 0.42)
+		for x in range(WORLD_BACKDROP_SIZE.x):
+			var u: float = float(x) / float(WORLD_BACKDROP_SIZE.x - 1)
+			var edge_mix: float = clamp(min(u, 1.0 - u) * 3.0, 0.0, 1.0)
+			var glow: float = clamp(1.0 - Vector2(u - 0.53, v - 0.58).length() * 2.1, 0.0, 1.0)
+			var fog_band: float = clamp(1.0 - abs(v - 0.55) * 4.0, 0.0, 1.0)
+			var color: Color = base
+			color = color.lerp(Color(0.07, 0.08, 0.10, 1.0), sky_mix * 0.34)
+			color = color.lerp(Color(0.06, 0.07, 0.08, 1.0), edge_mix * 0.50)
+			color = color.lerp(Color(0.20, 0.12, 0.08, 1.0), glow * 0.16)
+			color = color.lerp(Color(0.12, 0.13, 0.16, 1.0), fog_band * 0.14)
+			var grain: float = sin((x * 0.13) + (y * 0.17)) * 0.012 + cos((x * 0.07) - (y * 0.11)) * 0.008
+			if grain >= 0.0:
+				color = color.lightened(grain)
+			else:
+				color = color.darkened(-grain)
+			image.set_pixel(x, y, color)
+
+	# Add cliff silhouettes along the edges to reduce the empty gray feeling.
+	for y in range(WORLD_BACKDROP_SIZE.y):
+		var left_depth: int = int(44 + 18 * sin(float(y) * 0.06) + 10 * sin(float(y) * 0.19))
+		var right_depth: int = int(54 + 18 * sin(float(y) * 0.08 + 1.3) + 12 * sin(float(y) * 0.16))
+		var top_ridge: int = int(18 + 8 * sin(float(y) * 0.05 + 0.8))
+		for x in range(left_depth):
+			_plot(image, x, y, GRAPHITE_DARK.darkened(0.15))
+		for x in range(WORLD_BACKDROP_SIZE.x - right_depth, WORLD_BACKDROP_SIZE.x):
+			_plot(image, x, y, GRAPHITE_DARK.darkened(0.18))
+		if y < top_ridge:
+			for x in range(WORLD_BACKDROP_SIZE.x):
+				if x % 18 < 13:
+					_plot(image, x, y, GRAPHITE_DARK.darkened(0.12))
+
+	# Add a lower broken ridge to frame the play space.
+	for x in range(0, WORLD_BACKDROP_SIZE.x, 4):
+		var ridge_height: int = int(12 + 6 * sin(float(x) * 0.035) + 4 * sin(float(x) * 0.09 + 0.8))
+		for y in range(WORLD_BACKDROP_SIZE.y - ridge_height, WORLD_BACKDROP_SIZE.y):
+			_plot(image, x, y, BROWN.darkened(0.55))
+			_plot(image, x + 1, y, GRAPHITE_DARK)
+			_plot(image, x + 2, y, GRAPHITE_DARK)
+			_plot(image, x + 3, y, GRAPHITE_DARK.darkened(0.1))
+
+	# Warm furnace hint to make the scene feel inhabited instead of neutral.
+	for y in range(WORLD_BACKDROP_SIZE.y):
+		for x in range(WORLD_BACKDROP_SIZE.x):
+			var glow_center: Vector2 = Vector2(0.57, 0.64)
+			var glow: float = clamp(1.0 - Vector2(float(x) / WORLD_BACKDROP_SIZE.x - glow_center.x, float(y) / WORLD_BACKDROP_SIZE.y - glow_center.y).length() * 2.3, 0.0, 1.0)
+			if glow > 0.0:
+				var current: Color = image.get_pixel(x, y)
+				current = current.lerp(Color(0.42, 0.20, 0.10, 1.0), glow * 0.26)
+				image.set_pixel(x, y, current)
+
+	# Sparse ash specks.
+	for i in range(240):
+		var px: int = rng.randi_range(0, WORLD_BACKDROP_SIZE.x - 1)
+		var py: int = rng.randi_range(0, WORLD_BACKDROP_SIZE.y - 1)
+		var size: int = rng.randi_range(1, 2)
+		var ash_color: Color = ASH_DARK if rng.randi_range(0, 1) == 0 else ASH
+		for oy in range(size):
+			for ox in range(size):
+				_plot(image, px + ox, py + oy, ash_color)
+
+	_save_image(
+		image,
+		"%s/world_backdrop_mist.png" % GENERATED_ENVIRONMENT_DIR,
+		"%s/world_backdrop_mist.png" % RUNTIME_ENVIRONMENT_DIR
+	)
 
 
 func _draw_ui_cell(image: Image, rect: Rect2i, cell_x: int, cell_y: int) -> void:
