@@ -19,12 +19,16 @@ func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	attack_light_button.text = "Атака"
 	attack_heavy_button.text = "Сил."
-	dodge_button.text = "Кувырок"
-	interact_button.text = "Осмотр"
-	heal_button.text = "Трава"
+	dodge_button.text = "Рывок"
+	interact_button.text = "Взаим."
+	heal_button.text = "Леч."
 	pause_button.text = "Пауза"
 	prompt_label.text = "Взаим."
 	interact_button.visible = false
+	for button in [attack_light_button, attack_heavy_button, dodge_button, interact_button, heal_button, pause_button]:
+		button.focus_mode = Control.FOCUS_NONE
+		button.clip_text = true
+		button.add_theme_font_size_override("font_size", 14)
 	_wire_button(attack_light_button, "attack_light")
 	_wire_button(attack_heavy_button, "attack_heavy")
 	_wire_button(dodge_button, "dodge")

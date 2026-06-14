@@ -44,6 +44,12 @@ func get_active_quest() -> Dictionary:
 	return quest_data
 
 
+func get_active_title() -> String:
+	if quest_data.is_empty():
+		return active_quest_id
+	return String(quest_data.get("title", active_quest_id))
+
+
 func get_active_objective() -> String:
 	var stages_variant: Variant = quest_data.get("stages", [])
 	if not (stages_variant is Array):

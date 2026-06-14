@@ -31,7 +31,7 @@ func hide_panel() -> void:
 
 func refresh() -> void:
 	title_label.text = "Журнал"
-	quest_label.text = "Активный квест: %s" % QuestManager.active_quest_id
+	quest_label.text = "Активный квест: %s" % QuestManager.get_active_title()
 	objective_label.text = "Текущее задание:\n%s" % QuestManager.get_active_objective()
 	if QuestManager.completed_quests.is_empty():
 		completed_label.text = "Завершённые записи появятся позже."
