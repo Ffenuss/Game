@@ -1,0 +1,240 @@
+{
+  "display_name": "Каменный Лес",
+  "player_spawn": [
+    32,
+    176
+  ],
+  "layers": {
+    "ground": [
+      "......................",
+      "......................",
+      "......................",
+      "......................",
+      "......................",
+      "......................",
+      "......................",
+      "......................",
+      "......................",
+      "......................",
+      "......................",
+      "......................",
+      "......................",
+      "......................"
+    ],
+    "detail": [
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxx,xxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxrxxxxxxxxxxxx",
+      "xxxxmxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxmxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx"
+    ],
+    "road": [
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxx=====xxxxxxx",
+      "xxxxxx============xxxx",
+      "x==========xxx=======x",
+      "x======xxxxxxxxxx====x",
+      "xxxxxxxxxxxxxxxxxxxxxx"
+    ],
+    "water": [
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx"
+    ],
+    "wall": [
+      "######################",
+      "#xxxxxxxxxxxxxxxxxxxx#",
+      "#xxxxxxxxxxxxxxxxxxxx#",
+      "#xxxxxxxxxxxxxx##xxxx#",
+      "#xxxxxx##xxxxxx##xxxx#",
+      "#xxxxxx##xxxxxx##x##x#",
+      "#xxxxxx##xxxxxx##x##x#",
+      "#xxxxxxxxxxxxxxxxx##x#",
+      "#xxxxxxxxxxxxxxxxxxxx#",
+      "#xxxxxxxxxxxxxxxxxxxx#",
+      "#xxxxxxxxxxxxxxxxxxxx#",
+      "#xxxxxxxxxxxxxxxxxxxx#",
+      "#xxxxxxxxxxxxxxxxxxxx#",
+      "######################"
+    ],
+    "back": [
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx"
+    ],
+    "front": [
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxx"
+    ]
+  },
+  "collision": [
+    "######################",
+    "#xxxxxxxxxxxxxxxxxxxx#",
+    "#xxxxxxxxxxxxxxxxxxxx#",
+    "#xxxxxx#xxxxxxx#xxxxx#",
+    "#xxxxxx#xxxxxxx#xxxxx#",
+    "#xxxxxx#xxxxxxx#xxxxx#",
+    "#xxxxxx#xxxxxxx#xxxxx#",
+    "#xxxxxx#xxxxxxx#xxxxx#",
+    "#xxxxxx#xxxxxxx#xxxxx#",
+    "#xxxxxx#xxxxxxx#xxxxx#",
+    "#xxxxxx#xxxxxxx#xxxxx#",
+    "#xxxxxxxxxxxxxxxxxxxx#",
+    "#xxxxxxxxxxxxxxxxxxxx#",
+    "######################"
+  ],
+  "entities": [
+    {
+      "kind": "prop",
+      "prop_id": "dead_tree.placeholder",
+      "position": [
+        64,
+        88
+      ]
+    },
+    {
+      "kind": "prop",
+      "prop_id": "dead_tree.placeholder",
+      "position": [
+        160,
+        64
+      ]
+    },
+    {
+      "kind": "prop",
+      "prop_id": "dead_tree.placeholder",
+      "position": [
+        272,
+        104
+      ]
+    },
+    {
+      "kind": "enemy",
+      "enemy_id": "petrified_wolf",
+      "scene": "petrified_wolf",
+      "position": [
+        144,
+        144
+      ]
+    },
+    {
+      "kind": "enemy",
+      "enemy_id": "petrified_wolf",
+      "scene": "petrified_wolf",
+      "position": [
+        248,
+        96
+      ]
+    },
+    {
+      "kind": "transition",
+      "target_location_id": "old_ledge",
+      "position": [
+        24,
+        160
+      ],
+      "size": [
+        28,
+        28
+      ]
+    },
+    {
+      "kind": "transition",
+      "target_location_id": "mine_entrance_stub",
+      "position": [
+        320,
+        96
+      ],
+      "size": [
+        28,
+        28
+      ]
+    }
+  ],
+  "ash_particles": [
+    {
+      "effect_id": "ash_particle",
+      "position": [
+        48,
+        32
+      ],
+      "velocity_x": -3,
+      "velocity_y": -1,
+      "amplitude": 3.0,
+      "frequency": 1.0
+    },
+    {
+      "effect_id": "dust_particle",
+      "position": [
+        176,
+        28
+      ],
+      "velocity_x": -4,
+      "velocity_y": -1,
+      "amplitude": 2.2,
+      "frequency": 0.8
+    },
+    {
+      "effect_id": "ash_particle",
+      "position": [
+        280,
+        28
+      ],
+      "velocity_x": -3,
+      "velocity_y": -0.8,
+      "amplitude": 2.4,
+      "frequency": 1.2
+    }
+  ]
+}

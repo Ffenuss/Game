@@ -1,0 +1,15 @@
+{
+  "id": "mine_entrance_notice",
+  "speaker": "Штольня",
+  "lines": [
+    {
+      "speaker": "Штольня",
+      "text": "Вход в штольню не спит. Камень здесь дышит.",
+      "portrait": "npc.tessa.idle"
+    }
+  ],
+  "quest": {
+    "quest_id": "ash_under_skin",
+    "stage_index": 4
+  }
+}

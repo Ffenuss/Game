@@ -1,0 +1,6 @@
+{
+  "id": "quest_seal",
+  "name": "Печать поручения",
+  "description": "Сигил для задач, которые ещё не объяснили.",
+  "icon_id": "item.quest_seal"
+}

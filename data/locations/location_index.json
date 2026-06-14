@@ -1,0 +1,6 @@
+{
+  "collapsed_bridge": "res://scenes/locations/collapsed_bridge.tscn",
+  "old_ledge": "res://scenes/locations/old_ledge.tscn",
+  "stone_forest_stub": "res://scenes/locations/stone_forest_stub.tscn",
+  "mine_entrance_stub": "res://scenes/locations/mine_entrance_stub.tscn"
+}

@@ -1,0 +1,6 @@
+{
+  "id": "note",
+  "name": "Записка",
+  "description": "Обрывок записи на серой бумаге.",
+  "icon_id": "item.note"
+}

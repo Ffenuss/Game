@@ -1,0 +1,13 @@
+{
+  "id": "training_dummy",
+  "name": "Тренировочная мишень",
+  "max_health": 24,
+  "move_speed": 0.0,
+  "wander_speed": 0.0,
+  "detection_range": 0.0,
+  "attack_range": 0.0,
+  "attack_damage": 0,
+  "can_move": false,
+  "can_attack": false,
+  "asset_prefix": "training_dummy"
+}

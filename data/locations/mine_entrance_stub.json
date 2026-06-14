@@ -1,0 +1,232 @@
+{
+  "display_name": "Вход в заброшенную штольню",
+  "player_spawn": [
+    32,
+    176
+  ],
+  "layers": {
+    "ground": [
+      "..................",
+      "..................",
+      "..................",
+      "..................",
+      "..................",
+      "..................",
+      "..................",
+      "..................",
+      "..................",
+      "..................",
+      "..................",
+      "..................",
+      "..................",
+      ".................."
+    ],
+    "detail": [
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxmxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxmxxxxxxxxx",
+      "xxxxxxxxxxxxxrxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx"
+    ],
+    "road": [
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxx====xxxxxx",
+      "xxxxx==========xxx",
+      "x========xx======x",
+      "x=====xxxxxxxx===x",
+      "xxxxxxxxxxxxxxxxxx"
+    ],
+    "water": [
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx"
+    ],
+    "wall": [
+      "##################",
+      "###xxxxxxxxxxxxxx#",
+      "###xxxxxxxxxxxxxx#",
+      "###xxxxxxxxx++++x#",
+      "###xxxxxxxxx++++x#",
+      "###xxxxxxxxx++++x#",
+      "###xxxxxxxxx+++###",
+      "#xxxxxxxxxxx+++###",
+      "#xxxxxxxxxxx+++###",
+      "#xxxxxxxxxxxxxxxx#",
+      "#xxxxxxxxxxxxxxxx#",
+      "#xxxxxxxxxxxxxxxx#",
+      "#xxxxxxxxxxxxxxxx#",
+      "##################"
+    ],
+    "back": [
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx"
+    ],
+    "front": [
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxwwxxxx",
+      "xxxxxxxxxxxxwwxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxx"
+    ]
+  },
+  "collision": [
+    "##################",
+    "#xxxxxxxxxxxxxxxx#",
+    "#xxxxxxxxxxxxxxxx#",
+    "#xxxxxxxxxxx+x+xx#",
+    "#xxxxxxxxxxx+x+xx#",
+    "#xxxxxxxxxxx+x+xx#",
+    "#xxxxxxxxxxx+x+xx#",
+    "#xxxxxxxxxxx+x+xx#",
+    "#xxxxxxxxxxx+x+xx#",
+    "#xxxxxxxxxxx+x+xx#",
+    "#xxxxxxxxxxx+x+xx#",
+    "#xxxxxxxxxxxxxxxx#",
+    "#xxxxxxxxxxxxxxxx#",
+    "##################"
+  ],
+  "entities": [
+    {
+      "kind": "prop",
+      "prop_id": "furnace_pipe.placeholder",
+      "position": [
+        180,
+        48
+      ]
+    },
+    {
+      "kind": "prop",
+      "prop_id": "gate.placeholder",
+      "position": [
+        248,
+        104
+      ]
+    },
+    {
+      "kind": "prop",
+      "prop_id": "lantern.placeholder",
+      "position": [
+        136,
+        72
+      ]
+    },
+    {
+      "kind": "dialogue",
+      "dialogue_id": "mine_entrance_notice",
+      "speaker_name": "Штольня",
+      "position": [
+        128,
+        96
+      ],
+      "size": [
+        24,
+        24
+      ]
+    },
+    {
+      "kind": "enemy",
+      "enemy_id": "hollow_miner",
+      "scene": "hollow_miner",
+      "position": [
+        144,
+        152
+      ]
+    },
+    {
+      "kind": "transition",
+      "target_location_id": "stone_forest_stub",
+      "position": [
+        24,
+        160
+      ],
+      "size": [
+        28,
+        28
+      ]
+    }
+  ],
+  "ash_particles": [
+    {
+      "effect_id": "ash_particle",
+      "position": [
+        48,
+        28
+      ],
+      "velocity_x": -3,
+      "velocity_y": -0.8,
+      "amplitude": 2.2,
+      "frequency": 1.0
+    },
+    {
+      "effect_id": "spark_particle",
+      "position": [
+        144,
+        44
+      ],
+      "velocity_x": -1,
+      "velocity_y": 0,
+      "amplitude": 1.0,
+      "frequency": 1.3
+    },
+    {
+      "effect_id": "dust_particle",
+      "position": [
+        240,
+        36
+      ],
+      "velocity_x": -4,
+      "velocity_y": -1,
+      "amplitude": 2.2,
+      "frequency": 0.9
+    }
+  ]
+}

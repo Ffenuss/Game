@@ -1,0 +1,28 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/core/main_root.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/ui/mobile_hud.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/ui/pause_menu.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/ui/dialogue_panel.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://scenes/ui/inventory_panel.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://scenes/ui/journal_panel.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://scenes/ui/quest_update_panel.tscn" id="7"]
+
+[node name="MainRoot" type="Node"]
+script = ExtResource("1")
+
+[node name="WorldHost" type="Node2D" parent="."]
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+
+[node name="MobileHud" parent="UILayer" instance=ExtResource("2")]
+
+[node name="PauseMenu" parent="UILayer" instance=ExtResource("3")]
+
+[node name="DialoguePanel" parent="UILayer" instance=ExtResource("4")]
+
+[node name="InventoryPanel" parent="UILayer" instance=ExtResource("5")]
+
+[node name="JournalPanel" parent="UILayer" instance=ExtResource("6")]
+
+[node name="QuestUpdatePanel" parent="UILayer" instance=ExtResource("7")]

@@ -1,0 +1,6 @@
+{
+  "id": "miner_blade",
+  "name": "Клинок рудника",
+  "description": "Узкий клинок, выточенный для тесных коридоров штольни.",
+  "icon_id": "item.miner_blade"
+}

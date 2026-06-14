@@ -1,0 +1,20 @@
+{
+  "id": "tesa_intro",
+  "speaker": "Тесса",
+  "lines": [
+    {
+      "speaker": "Тесса",
+      "text": "Пепел оседает на одежде. На душе он остаётся дольше.",
+      "portrait": "npc.tessa.idle"
+    },
+    {
+      "speaker": "Тесса",
+      "text": "Если знак на груди жжёт, не трогай его железом. Иди к старой штольне.",
+      "portrait": "npc.tessa.idle"
+    }
+  ],
+  "quest": {
+    "quest_id": "ash_under_skin",
+    "stage_index": 2
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "mark_on_skin",
+  "speaker": "Клеймо",
+  "lines": [
+    {
+      "speaker": "Клеймо",
+      "text": "Кожа холодеет. Знак отвечает на древний камень.",
+      "portrait": "npc.tessa.idle"
+    },
+    {
+      "speaker": "Клеймо",
+      "text": "Следующий путь ведёт к заброшенной штольне.",
+      "portrait": "npc.tessa.idle"
+    }
+  ],
+  "quest": {
+    "quest_id": "ash_under_skin",
+    "stage_index": 3
+  }
+}

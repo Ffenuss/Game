@@ -1,0 +1,274 @@
+{
+  "display_name": "Старый Уступ",
+  "player_spawn": [
+    32,
+    184
+  ],
+  "layers": {
+    "ground": [
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ],
+    "detail": [
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxrxxxxx",
+      "xxxxxxxxmxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxmxxxxxxxxx",
+      "xxxxxrxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxx,xxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx"
+    ],
+    "road": [
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxx====xxxxxxxx",
+      "xxxxxxx==============xxx",
+      "x============xxx=======x",
+      "x========xxxxxxxxxxx===x",
+      "xxxxxxxxxxxxxxxxxxxxxxxx"
+    ],
+    "water": [
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx"
+    ],
+    "wall": [
+      "########################",
+      "##xxxxxxxxxxxxxxxxxxxx##",
+      "##xxxxxxxxxxxxxxxxxxxx##",
+      "##xxxxxxxxxxxxx++++xxx##",
+      "##xxxxxxxxxxxxx++++xxx##",
+      "##xxxxxxxxxxxxx++++xxx##",
+      "#xxxxxxxxxxxxxx++++xxx##",
+      "#xxxxxxxxxxxxxx++++xxxx#",
+      "#xxxxxxxxxxxxxxxxx###xx#",
+      "#xxxxxxxxxxxxxxxxx###xx#",
+      "#xxxxxxxxxxxxxxxxx###xx#",
+      "#xxxxxxxxxxxxxxxxx###xx#",
+      "#xxxxxxxxxxxxxxxxxxxxxx#",
+      "########################"
+    ],
+    "back": [
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx"
+    ],
+    "front": [
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxwwwxxxxxxx",
+      "xxxxxxxxxxxxxxxwwxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxwwxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxxxxxxxxx"
+    ]
+  },
+  "collision": [
+    "########################",
+    "#xxxxxxxxxxxxxxxxxxxxx##",
+    "#xxxxxxxxxxxxxxxxxxxxx##",
+    "#xxxxxxxxxxxxxx+x+xxxx##",
+    "#xxxxxxxxxxxxxx+x+xxxx##",
+    "#xxxxxxxxxxxxxx+x+xxxx##",
+    "#xxxxxxxxxxxxxx+x+xxxx##",
+    "#xxxxxxxxxxxxxx+x+xxxxx#",
+    "#xxxxxxxxxxxxxx+x+xxxxx#",
+    "#xxxxxxxxxxxxxx+x+xxxxx#",
+    "#xxxxxxxxxxxxxx+x+xxxxx#",
+    "#xxxxxxxxxxxxxxxxxxxxxx#",
+    "#xxxxxxxxxxxxxxxxxxxxxx#",
+    "########################"
+  ],
+  "entities": [
+    {
+      "kind": "prop",
+      "prop_id": "dead_tree.placeholder",
+      "position": [
+        72,
+        80
+      ]
+    },
+    {
+      "kind": "prop",
+      "prop_id": "furnace_pipe.placeholder",
+      "position": [
+        232,
+        40
+      ]
+    },
+    {
+      "kind": "prop",
+      "prop_id": "lantern.placeholder",
+      "position": [
+        184,
+        72
+      ]
+    },
+    {
+      "kind": "prop",
+      "prop_id": "gate.placeholder",
+      "position": [
+        304,
+        96
+      ]
+    },
+    {
+      "kind": "checkpoint",
+      "checkpoint_id": "warm_stone_village",
+      "position": [
+        128,
+        160
+      ],
+      "size": [
+        24,
+        24
+      ]
+    },
+    {
+      "kind": "npc",
+      "scene": "tessa",
+      "dialogue_id": "tesa_intro",
+      "speaker_name": "Тесса",
+      "position": [
+        176,
+        112
+      ]
+    },
+    {
+      "kind": "dialogue",
+      "dialogue_id": "mark_on_skin",
+      "speaker_name": "Клеймо",
+      "position": [
+        112,
+        112
+      ],
+      "size": [
+        24,
+        24
+      ]
+    },
+    {
+      "kind": "enemy",
+      "enemy_id": "training_dummy",
+      "scene": "training_dummy",
+      "position": [
+        88,
+        160
+      ]
+    },
+    {
+      "kind": "transition",
+      "target_location_id": "stone_forest_stub",
+      "position": [
+        344,
+        48
+      ],
+      "size": [
+        28,
+        28
+      ]
+    },
+    {
+      "kind": "transition",
+      "target_location_id": "mine_entrance_stub",
+      "position": [
+        344,
+        176
+      ],
+      "size": [
+        28,
+        28
+      ]
+    }
+  ],
+  "ash_particles": [
+    {
+      "effect_id": "ash_particle",
+      "position": [
+        56,
+        44
+      ],
+      "velocity_x": -4,
+      "velocity_y": -1,
+      "amplitude": 2.4,
+      "frequency": 1.0
+    },
+    {
+      "effect_id": "dust_particle",
+      "position": [
+        188,
+        40
+      ],
+      "velocity_x": -5,
+      "velocity_y": -1,
+      "amplitude": 2.8,
+      "frequency": 0.9
+    },
+    {
+      "effect_id": "spark_particle",
+      "position": [
+        296,
+        36
+      ],
+      "velocity_x": -2,
+      "velocity_y": -0.5,
+      "amplitude": 1.8,
+      "frequency": 1.2
+    }
+  ]
+}

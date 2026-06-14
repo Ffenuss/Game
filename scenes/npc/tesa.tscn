@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/npc/tesa.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/dialogue/dialogue_trigger_component.gd" id="2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
+size = Vector2(16, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2"]
+size = Vector2(32, 32)
+
+[node name="Tessa" type="CharacterBody2D"]
+script = ExtResource("1")
+dialogue_id = "tesa_intro"
+speaker_name = "Тесса"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1")
+
+[node name="DialogueTriggerComponent" type="Area2D" parent="."]
+script = ExtResource("2")
+dialogue_id = "tesa_intro"
+speaker_name = "Тесса"
+prompt_text = "Поговорить"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DialogueTriggerComponent"]
+shape = SubResource("RectangleShape2D_2")
