@@ -17,3 +17,5 @@
 - Compactified the mobile HUD layout for better landscape readability on phones.
 - Updated the journal to show the quest title instead of only the raw quest ID.
 - Added a release audit and Android release notes for the current vertical slice.
+- Started a visual polish pass to add darker framing, a smaller joystick, compact lower-right action buttons, and a more game-like HUD presentation.
+- Regenerated the procedural UI atlas and added a full-screen vignette backdrop asset for mobile framing.

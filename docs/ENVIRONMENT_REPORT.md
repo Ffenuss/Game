@@ -46,6 +46,11 @@ Date: 2026-06-14
 - `"/tmp/godot-4.6.3-arm64/Godot_v4.6.3-stable_linux.arm64 --headless --path /root/game --script res://tools/validate_asset_manifest.gd"` exited `0`.
 - `"/tmp/godot-4.6.3-arm64/Godot_v4.6.3-stable_linux.arm64 --headless --path /root/game --script res://tools/validate_runtime_smoke.gd"` exited `0` and started `res://scenes/main/title_screen.tscn`.
 
+### Current visual-pass validation
+
+- `"/tmp/godot-4.6.3-arm64/Godot_v4.6.3-stable_linux.arm64 --headless --path /root/game --script res://tools/generate_placeholder_assets.gd"` completed successfully and regenerated the UI atlas plus backdrop assets.
+- The same headless project structure, manifest, and runtime smoke checks passed after the visual updates.
+
 Date: 2026-06-13
 
 ## Repository state

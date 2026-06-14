@@ -2,14 +2,14 @@
 
 ## Current Phase
 
-Release-prep pass: compact the mobile HUD, raise journal readability, audit release readiness, and verify the current loop still validates after polish changes.
+Visual polish pass: make the current Android slice read as a game instead of a debug prototype by shrinking and framing the HUD, darkening the empty screen space, and improving camera composition and level atmosphere.
 
 ## Current Diagnosis
 
-- Working: title screen, boot flow, player movement, location loading, touch controls, checkpoint/save scaffolding, combat scaffolding, dialogue, quest data, inventory/journal scaffolds, and asset normalization.
-- Incomplete: HUD compactness, Android export prep, device-side QA, audio polish, and first-area readability polish.
-- Broken or risky: the HUD layout is too large for comfortable landscape play on phones, and Android export configuration has not yet been verified in this pass.
-- Planned improvement: keep the current architecture, but reduce UI overlap, show more human-readable quest titles, and rerun validation after the edits.
+- Working: the core playable loop, title flow, movement, combat, dialogue, quest scaffolds, checkpointing, save support, and existing data-driven world structure.
+- Incomplete: visual framing, HUD compactness, asset polish, Android screenshot QA, and export prep.
+- Broken or risky: the HUD still reads like a development overlay, the empty background space makes the world feel small, and the player camera currently reveals too much dead space for the current map size.
+- Planned improvement: add a dark full-screen backdrop, compact the HUD into lower-screen thumb zones, make the bars and buttons more game-like, and give the first location stronger visual framing without changing gameplay scope.
 
 ## Completed Steps
 
@@ -31,18 +31,19 @@ Release-prep pass: compact the mobile HUD, raise journal readability, audit rele
 - Refined the mobile HUD for smaller touch targets and better landscape anchoring.
 - Updated the journal to show the quest title instead of only the raw quest ID.
 - Recorded the current release-prep environment state and release audit gaps.
+- Reworked the visual polish pass to target backdrop framing, camera composition, and more readable mobile UI surfaces.
 
 ## Next Safe Steps
 
-1. Re-run headless validation after the HUD and journal edits.
-2. Open the project in the Android Editor and verify the compact HUD layout on a device-sized viewport.
-3. Add Android export configuration and finish any remaining release notes only after the base slice stays stable.
+1. Open the project in the Android Editor and verify the new HUD, backdrop, and camera composition on a device-sized viewport.
+2. Capture screenshots to confirm the gameplay area no longer reads as a gray debug room.
+3. If the device review is acceptable, commit the visual polish checkpoint and stop before broader gameplay work.
 
 ## Blockers
 
 - No code blocker is currently confirmed.
-- Android Editor and device-side QA are still required for release confidence.
-- Android export setup still needs verification in this pass.
+- Android Editor and device-side screenshot QA are still required for visual confidence.
+- Android export setup still needs verification in a later pass.
 
 ## Validation Results
 
@@ -58,14 +59,20 @@ Release-prep pass: compact the mobile HUD, raise journal readability, audit rele
   - `validate_project_structure.gd` exit `0`
   - `validate_asset_manifest.gd` exit `0`
   - `validate_runtime_smoke.gd` exit `0`
+- Procedural UI assets were regenerated successfully with `tools/generate_placeholder_assets.gd`.
+- Current visual-pass revalidation also passed after the backdrop, HUD, and asset updates:
+  - `validate_project_structure.gd` exit `0`
+  - `validate_asset_manifest.gd` exit `0`
+  - `validate_runtime_smoke.gd` exit `0`
 
 ## Manual Android Testing Requests
 
 1. Run the project in Godot 4.6 Android Editor.
 2. Confirm landscape orientation and Compatibility renderer.
-3. Confirm the HUD buttons no longer overlap the play space excessively.
-4. Confirm touch controls, collisions, combat, dialogue, quest updates, and save flow.
-5. Capture screenshots for layout and readability review.
+3. Confirm the HUD buttons stay in the lower-right thumb zone.
+4. Confirm the joystick is smaller and less visually dominant.
+5. Confirm the world no longer reads as a gray debug room.
+6. Capture screenshots and logs for layout and readability review.
 
 ## Unresolved Questions
 

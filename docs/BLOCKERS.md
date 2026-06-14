@@ -4,6 +4,7 @@
 
 - No Godot executable is available in PATH, so headless project validation cannot be run from the default shell.
 - Android export configuration still needs a committed preset and device-side verification before a real release build.
+- Visual QA still needs Android Editor/device screenshot review after this polish pass.
 
 ## Non-blocking fallback
 
