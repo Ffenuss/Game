@@ -24,13 +24,13 @@ func _ready() -> void:
 	interact_button.text = "Взаим"
 	heal_button.text = "Леч"
 	inventory_button.text = "Инв"
-	pause_button.text = "Пауза"
+	pause_button.text = "Пау"
 	prompt_label.text = "Взаим"
 	interact_button.visible = false
 	for button in [attack_light_button, attack_heavy_button, dodge_button, interact_button, heal_button, inventory_button, pause_button]:
 		button.focus_mode = Control.FOCUS_NONE
 		button.clip_text = true
-		button.add_theme_font_size_override("font_size", 12)
+		button.add_theme_font_size_override("font_size", 10)
 		_apply_button_skin(button)
 	_wire_button(attack_light_button, "attack_light")
 	_wire_button(attack_heavy_button, "attack_heavy")
@@ -84,36 +84,36 @@ func _set_default_textures() -> void:
 
 func _apply_button_skin(button: Button) -> void:
 	var normal := StyleBoxFlat.new()
-	normal.bg_color = Color(0.08, 0.09, 0.11, 0.78)
-	normal.border_color = Color(0.29, 0.21, 0.15, 0.9)
-	normal.border_width_left = 2
-	normal.border_width_top = 2
-	normal.border_width_right = 2
-	normal.border_width_bottom = 2
-	normal.corner_radius_top_left = 7
-	normal.corner_radius_top_right = 7
-	normal.corner_radius_bottom_left = 7
-	normal.corner_radius_bottom_right = 7
-	normal.content_margin_left = 4
-	normal.content_margin_right = 4
+	normal.bg_color = Color(0.07, 0.08, 0.10, 0.74)
+	normal.border_color = Color(0.23, 0.27, 0.32, 0.82)
+	normal.border_width_left = 1
+	normal.border_width_top = 1
+	normal.border_width_right = 1
+	normal.border_width_bottom = 1
+	normal.corner_radius_top_left = 9
+	normal.corner_radius_top_right = 9
+	normal.corner_radius_bottom_left = 9
+	normal.corner_radius_bottom_right = 9
+	normal.content_margin_left = 3
+	normal.content_margin_right = 3
 	normal.content_margin_top = 1
 	normal.content_margin_bottom = 1
 	button.add_theme_stylebox_override("normal", normal)
 
 	var hover := normal.duplicate() as StyleBoxFlat
-	hover.bg_color = Color(0.12, 0.13, 0.16, 0.84)
-	hover.border_color = Color(0.53, 0.37, 0.22, 0.96)
+	hover.bg_color = Color(0.11, 0.12, 0.15, 0.82)
+	hover.border_color = Color(0.44, 0.30, 0.18, 0.92)
 	button.add_theme_stylebox_override("hover", hover)
 
 	var pressed := normal.duplicate() as StyleBoxFlat
-	pressed.bg_color = Color(0.18, 0.11, 0.09, 0.94)
-	pressed.border_color = Color(0.81, 0.48, 0.23, 1.0)
+	pressed.bg_color = Color(0.15, 0.10, 0.08, 0.92)
+	pressed.border_color = Color(0.75, 0.44, 0.20, 1.0)
 	button.add_theme_stylebox_override("pressed", pressed)
 
-	button.add_theme_color_override("font_color", Color(0.94, 0.95, 0.96, 1.0))
-	button.add_theme_color_override("font_hover_color", Color(1.0, 0.95, 0.82, 1.0))
-	button.add_theme_color_override("font_pressed_color", Color(1.0, 0.90, 0.70, 1.0))
-	button.add_theme_color_override("font_disabled_color", Color(0.60, 0.62, 0.65, 1.0))
+	button.add_theme_color_override("font_color", Color(0.95, 0.96, 0.97, 1.0))
+	button.add_theme_color_override("font_hover_color", Color(1.0, 0.96, 0.86, 1.0))
+	button.add_theme_color_override("font_pressed_color", Color(1.0, 0.91, 0.74, 1.0))
+	button.add_theme_color_override("font_disabled_color", Color(0.58, 0.61, 0.64, 1.0))
 
 
 func _set_button_texture(button: Button, asset_id: String) -> void:

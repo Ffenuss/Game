@@ -29,6 +29,8 @@ Visual polish pass: make the current Android slice read as a game instead of a d
 - Added validation scripts and the Android manual test checklist.
 - Verified the project structure, manifest, and headless startup smoke under Godot 4.6.3 ARM64.
 - Refined the mobile HUD for smaller touch targets and better landscape anchoring.
+- Tightened the mobile HUD again after screenshot review so the action cluster sits deeper in the lower-right thumb zone and the status panel is less dominant.
+- Softened the HUD chrome and reduced caption font size so the controls read less like debug widgets and more like a game UI.
 - Updated the journal to show the quest title instead of only the raw quest ID.
 - Recorded the current release-prep environment state and release audit gaps.
 - Reworked the visual polish pass to target backdrop framing, camera composition, and more readable mobile UI surfaces.
