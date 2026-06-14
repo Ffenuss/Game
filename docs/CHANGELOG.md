@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added the permanent game development bible and supporting rulebooks for Codex, Android, licensing, and asset sourcing.
 - Initialized the Android-first Godot repository structure.
 - Added architecture, policy, art, world, roadmap, testing, and decision docs.
 - Added bootstrap planning and environment reporting files.

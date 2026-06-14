@@ -7,6 +7,18 @@ Android-first Godot 4.6 pixel-art action RPG vertical slice.
 An original dark-fantasy mobile RPG slice built for the Godot 4 Android Editor workflow.
 The goal is a small playable core: title screen, movement, touch controls, one test area, combat, checkpointing, dialogue, and a quest scaffold.
 
+## Canonical development docs
+
+Before editing, future contributors must read:
+
+- [docs/GAME_DEV_BIBLE.md](docs/GAME_DEV_BIBLE.md)
+- [docs/ASSET_SOURCES_2026.md](docs/ASSET_SOURCES_2026.md)
+- [docs/LICENSE_POLICY.md](docs/LICENSE_POLICY.md)
+- [docs/GODOT_46_PROJECT_RULES.md](docs/GODOT_46_PROJECT_RULES.md)
+- [docs/ANDROID_GAME_RULES.md](docs/ANDROID_GAME_RULES.md)
+- [docs/CODEX_WORKFLOW.md](docs/CODEX_WORKFLOW.md)
+- [PLANS.md](PLANS.md)
+
 ## Constraints
 
 - Godot 4.6
@@ -16,6 +28,8 @@ The goal is a small playable core: title screen, movement, touch controls, one t
 - TileMapLayer for maps
 - Local saves only
 - No native plugins, Mono, or online services
+
+These constraints are expanded in [docs/GAME_DEV_BIBLE.md](docs/GAME_DEV_BIBLE.md) and the supporting rulebooks.
 
 ## How to open
 

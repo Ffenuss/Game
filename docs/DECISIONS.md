@@ -1,5 +1,7 @@
 # Decisions
 
+For project-wide policy and scope rules, see [GAME_DEV_BIBLE.md](GAME_DEV_BIBLE.md). This file records specific decisions and trade-offs.
+
 ## Architecture
 
 - Use a persistent main scene plus location scenes loaded into a shared world host.

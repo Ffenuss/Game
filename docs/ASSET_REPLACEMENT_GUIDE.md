@@ -1,5 +1,7 @@
 # Asset Replacement Guide
 
+This guide follows the canonical rules in [GAME_DEV_BIBLE.md](GAME_DEV_BIBLE.md) and [LICENSE_POLICY.md](LICENSE_POLICY.md).
+
 ## Contract
 
 Scenes and scripts should use stable logical asset IDs from `data/assets/asset_manifest.json`.

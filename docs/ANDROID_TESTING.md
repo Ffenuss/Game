@@ -1,5 +1,7 @@
 # Android Testing
 
+See [GAME_DEV_BIBLE.md](GAME_DEV_BIBLE.md) and [ANDROID_GAME_RULES.md](ANDROID_GAME_RULES.md) for the higher-level mobile rules.
+
 ## Manual checklist
 
 1. Open the project in Godot 4.6 Android Editor.

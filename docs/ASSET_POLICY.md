@@ -1,5 +1,7 @@
 # Asset Policy
 
+This is the short summary. The authoritative rules are in [GAME_DEV_BIBLE.md](GAME_DEV_BIBLE.md), [ASSET_SOURCES_2026.md](ASSET_SOURCES_2026.md), and [LICENSE_POLICY.md](LICENSE_POLICY.md).
+
 ## Allowed automatically
 
 - CC0
@@ -42,4 +44,3 @@ Documentation or Godot-specific sources only:
 - Keep generated placeholders in `assets/generated/placeholders/` and normalize them into runtime paths when they are used by scenes.
 - Archive license proof for every imported third-party file.
 - Update `data/assets/asset_manifest.json` when any asset changes.
-

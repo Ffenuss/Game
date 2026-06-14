@@ -1,5 +1,7 @@
 # Roadmap
 
+This roadmap is a phase sketch only. For production rules and scope discipline, read [GAME_DEV_BIBLE.md](GAME_DEV_BIBLE.md) first.
+
 ## Phase 0
 
 - Repo and environment assessment
@@ -58,4 +60,3 @@
 - Replace placeholders with original art
 - Expand world safely in data-driven slices
 - Add audio and more locations only when the slice remains stable
-

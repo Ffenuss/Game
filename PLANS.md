@@ -2,14 +2,15 @@
 
 ## Current Phase
 
-Visual polish pass: make the current Android slice read as a game instead of a debug prototype by shrinking and framing the HUD, darkening the empty screen space, and improving camera composition and level atmosphere.
+Documentation architecture pass: create the permanent game development bible and supporting rulebooks so future Codex work has one authoritative source for architecture, assets, licensing, Android rules, QA, and workflow.
 
 ## Current Diagnosis
 
-- Working: the core playable loop, title flow, movement, combat, dialogue, quest scaffolds, checkpointing, save support, and existing data-driven world structure.
-- Incomplete: visual framing, HUD compactness, asset polish, Android screenshot QA, and export prep.
-- Broken or risky: the HUD still reads like a development overlay, the empty background space makes the world feel small, and the player camera currently reveals too much dead space for the current map size.
-- Planned improvement: add a dark full-screen backdrop, compact the HUD into lower-screen thumb zones, make the bars and buttons more game-like, and give the first location stronger visual framing without changing gameplay scope.
+- Working: the repository already has a playable Android-first Godot vertical slice, modular code, an asset pipeline, and a prior documentation base.
+- Incomplete: the repository lacks a single canonical production handbook with clear “what to do / what not to do” rules, current 2026 asset source guidance, and explicit Codex workflow requirements.
+- Broken or risky: the existing documentation is distributed across several smaller files, which is workable but not authoritative enough for future agents without a stronger top-level handbook.
+- Planned improvement: add a permanent documentation book in Russian, add 2026 asset source and license policy docs, create explicit Godot/Android/game rules, and update AGENTS.md so every future task reads the right files first.
+- Status after this task: the permanent documentation set has been created and the cross-links now point future work at the correct canonical sources.
 
 ## Completed Steps
 
@@ -34,18 +35,24 @@ Visual polish pass: make the current Android slice read as a game instead of a d
 - Updated the journal to show the quest title instead of only the raw quest ID.
 - Recorded the current release-prep environment state and release audit gaps.
 - Reworked the visual polish pass to target backdrop framing, camera composition, and more readable mobile UI surfaces.
+- Identified the need for a permanent documentation bible and supporting rulebooks before any further gameplay or asset changes.
+- Created the permanent game development bible and supporting rulebooks for asset sources, licensing, Godot 4.6 rules, Android rules, visual style, Codex workflow, production checklists, and source update policy.
+- Updated `AGENTS.md` so future Codex tasks must read the new canonical docs first.
+- Updated existing docs and README cross-links so the new documentation hierarchy is explicit.
 
 ## Next Safe Steps
 
-1. Open the project in the Android Editor and verify the new HUD, backdrop, and camera composition on a device-sized viewport.
-2. Capture screenshots to confirm the gameplay area no longer reads as a gray debug room.
-3. If the device review is acceptable, commit the visual polish checkpoint and stop before broader gameplay work.
+1. Verify any future gameplay or asset task begins by reading the new canonical docs.
+2. If the repository continues with production work, keep updating the bible and rulebooks whenever a rule changes.
+3. Keep documentation-only changes separate from gameplay changes where practical.
 
 ## Blockers
 
 - No code blocker is currently confirmed.
-- Android Editor and device-side screenshot QA are still required for visual confidence.
+- Android Editor and device-side screenshot QA remain required for the visual pass, but they are not the goal of this documentation task.
 - Android export setup still needs verification in a later pass.
+- The repository needs a single authoritative documentation book before future work continues.
+- No asset import or gameplay work was performed in this documentation pass.
 
 ## Validation Results
 
@@ -66,6 +73,11 @@ Visual polish pass: make the current Android slice read as a game instead of a d
   - `validate_project_structure.gd` exit `0`
   - `validate_asset_manifest.gd` exit `0`
   - `validate_runtime_smoke.gd` exit `0`
+- Documentation-only pass: no runtime validation is required beyond static repository checks unless a file change touches scenes, scripts, or assets.
+- `git diff --check` passed after the documentation updates.
+- `validate_project_structure.gd` exit `0` after the documentation updates.
+- `validate_asset_manifest.gd` exit `0` after the documentation updates.
+- `validate_runtime_smoke.gd` exit `0` and started `res://scenes/main/title_screen.tscn`.
 
 ## Manual Android Testing Requests
 
@@ -75,15 +87,17 @@ Visual polish pass: make the current Android slice read as a game instead of a d
 4. Confirm the joystick is smaller and less visually dominant.
 5. Confirm the world no longer reads as a gray debug room.
 6. Capture screenshots and logs for layout and readability review.
+7. For the documentation pass, verify the new bible links and future-agent instructions only.
+8. For future work, ensure each task still starts with the canonical docs sequence.
 
 ## Unresolved Questions
 
-- None blocking at bootstrap time.
+- None blocking for documentation creation.
 
 ## Files Changed in Current Phase
 
 - Root config: `project.godot`, `.gitignore`, `AGENTS.md`, `PLANS.md`, `README.md`
-- Docs: `docs/*.md` including architecture, asset policy, art bible, world bible, roadmap, Android testing, decisions, changelog, replacement guide, environment report, blockers, asset requests, and release audit notes
+- Docs: `docs/*.md` including architecture, asset policy, art bible, world bible, roadmap, Android testing, decisions, changelog, replacement guide, environment report, blockers, asset requests, release audit notes, plus the new game bible, source policy, license policy, Godot rules, Android rules, visual style, Codex workflow, production checklists, and source update policy
 - Scripts: `scripts/autoload/`, `scripts/core/`, `scripts/player/`, `scripts/enemies/`, `scripts/npc/`, `scripts/combat/`, `scripts/dialogue/`, `scripts/quests/`, `scripts/ui/`, `scripts/world/`, `scripts/effects/`
 - Scenes: `scenes/boot/`, `scenes/main/`, `scenes/player/`, `scenes/enemies/`, `scenes/npc/`, `scenes/ui/`, `scenes/locations/`
 - Data: `data/assets/`, `data/dialogues/`, `data/enemies/`, `data/items/`, `data/quests/`, `data/locations/`
