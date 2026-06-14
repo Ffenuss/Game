@@ -19,5 +19,7 @@
 - Tightened the mobile HUD again after screenshot review so the action cluster sits deeper in the lower-right thumb zone and the status panel is less dominant.
 - Updated the journal to show the quest title instead of only the raw quest ID.
 - Added a release audit and Android release notes for the current vertical slice.
-- Started a visual polish pass to add darker framing, a smaller joystick, compact lower-right action buttons, and a more game-like HUD presentation.
+- Added current project status and next development plan documents to keep readiness and roadmap explicit.
+- Added a shared UI styling helper and applied it to title, pause, dialogue, inventory, journal, quest update, and mobile HUD surfaces.
+- Compacted the mobile HUD further, including a smaller joystick, tighter action cluster, and cleaner status panel presentation.
 - Regenerated the procedural UI atlas and added a full-screen vignette backdrop asset for mobile framing.

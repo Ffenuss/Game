@@ -2,9 +2,10 @@
 
 ## Active blockers
 
-- No Godot executable is available in PATH, so headless project validation cannot be run from the default shell.
-- Android export configuration still needs a committed preset and device-side verification before a real release build.
-- Visual QA still needs Android Editor/device screenshot review after this polish pass.
+- The project still does not have a committed `export_presets.cfg`, so Android export is not yet release-ready.
+- Android Editor/device-side screenshot QA is still required for final layout and readability verification.
+- Release-quality audio has not been completed yet.
+- No Godot executable is available in `PATH`, but a temporary ARM64 binary is available at `/tmp/godot-4.6.3-arm64/Godot_v4.6.3-stable_linux.arm64` for headless validation.
 
 ## Non-blocking fallback
 

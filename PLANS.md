@@ -2,15 +2,17 @@
 
 ## Current Phase
 
-Documentation architecture pass: create the permanent game development bible and supporting rulebooks so future Codex work has one authoritative source for architecture, assets, licensing, Android rules, QA, and workflow.
+Current-state audit completed; shared UI/presentation pass landed; next safe milestone is Android export prep and device QA.
 
 ## Current Diagnosis
 
 - Working: the repository already has a playable Android-first Godot vertical slice, modular code, an asset pipeline, and a prior documentation base.
-- Incomplete: the repository lacks a single canonical production handbook with clear “what to do / what not to do” rules, current 2026 asset source guidance, and explicit Codex workflow requirements.
-- Broken or risky: the existing documentation is distributed across several smaller files, which is workable but not authoritative enough for future agents without a stronger top-level handbook.
-- Planned improvement: add a permanent documentation book in Russian, add 2026 asset source and license policy docs, create explicit Godot/Android/game rules, and update AGENTS.md so every future task reads the right files first.
-- Status after this task: the permanent documentation set has been created and the cross-links now point future work at the correct canonical sources.
+- Working: the repository already has a playable Android-first Godot vertical slice, modular code, an asset pipeline, and a strong documentation base.
+- Incomplete: the project still lacks a committed Android export preset and device-side QA has not been completed in this turn.
+- Broken or risky: the slice is playable but still needs real-device verification for HUD spacing, export flow, and final screenshot readability.
+- Planned improvement: finish one focused UI/presentation pass because that has the highest visible impact without widening gameplay scope, then move to export prep.
+- Current focus: the shared UI skin/helper and HUD compaction are now landed; the next focus is Android export preparation.
+- Status after the previous documentation phase: the permanent documentation set exists and future tasks are pointed at the correct canonical rules.
 
 ## Completed Steps
 
@@ -39,20 +41,25 @@ Documentation architecture pass: create the permanent game development bible and
 - Created the permanent game development bible and supporting rulebooks for asset sources, licensing, Godot 4.6 rules, Android rules, visual style, Codex workflow, production checklists, and source update policy.
 - Updated `AGENTS.md` so future Codex tasks must read the new canonical docs first.
 - Updated existing docs and README cross-links so the new documentation hierarchy is explicit.
+- Inspected the actual repository state again for the current release-readiness audit.
+- Confirmed the main scene, title flow, player, HUD, world, combat, checkpoint, save, dialogue, quest, inventory, journal, and asset pipeline are all present in the current tree.
+- Confirmed the project still has no committed `export_presets.cfg`.
+- Confirmed a temporary headless Godot 4.6.3 binary is available under `/tmp/godot-4.6.3-arm64/`.
+- Created `docs/CURRENT_PROJECT_STATUS.md` and `docs/NEXT_DEVELOPMENT_PLAN.md` to make the current readiness and next milestone explicit.
 
 ## Next Safe Steps
 
-1. Verify any future gameplay or asset task begins by reading the new canonical docs.
-2. If the repository continues with production work, keep updating the bible and rulebooks whenever a rule changes.
-3. Keep documentation-only changes separate from gameplay changes where practical.
+1. Validate the finished UI/presentation pass and record the exact results.
+2. Move to Android export prep with a committed `export_presets.cfg`.
+3. Run Android device-side screenshot and control QA once export prep is in place.
 
 ## Blockers
 
 - No code blocker is currently confirmed.
-- Android Editor and device-side screenshot QA remain required for the visual pass, but they are not the goal of this documentation task.
+- Android Editor and device-side screenshot QA remain required for the current slice.
 - Android export setup still needs verification in a later pass.
-- The repository needs a single authoritative documentation book before future work continues.
-- No asset import or gameplay work was performed in this documentation pass.
+- The repository does not yet have a committed Android export preset.
+- No asset import or gameplay work was performed in the documentation-focused phase.
 
 ## Validation Results
 
@@ -73,11 +80,20 @@ Documentation architecture pass: create the permanent game development bible and
   - `validate_project_structure.gd` exit `0`
   - `validate_asset_manifest.gd` exit `0`
   - `validate_runtime_smoke.gd` exit `0`
+- The shared UI helper and compact HUD pass were validated with headless Godot:
+  - `validate_project_structure.gd` exit `0`
+  - `validate_asset_manifest.gd` exit `0`
+  - `validate_runtime_smoke.gd` exit `0`
 - Documentation-only pass: no runtime validation is required beyond static repository checks unless a file change touches scenes, scripts, or assets.
 - `git diff --check` passed after the documentation updates.
+- `git diff --check` exit `0` after the final documentation and plan updates.
 - `validate_project_structure.gd` exit `0` after the documentation updates.
 - `validate_asset_manifest.gd` exit `0` after the documentation updates.
 - `validate_runtime_smoke.gd` exit `0` and started `res://scenes/main/title_screen.tscn`.
+- Repository inspection for the current audit completed:
+  - `git status --short --branch`
+  - `find scenes`, `find scripts`, `find data`, `find resources`, `find tools`
+  - inspected `project.godot`, main/title/player/HUD scenes, core scripts, location data, asset manifest, and export preset presence
 
 ## Manual Android Testing Requests
 
@@ -89,15 +105,17 @@ Documentation architecture pass: create the permanent game development bible and
 6. Capture screenshots and logs for layout and readability review.
 7. For the documentation pass, verify the new bible links and future-agent instructions only.
 8. For future work, ensure each task still starts with the canonical docs sequence.
+9. For the current release pass, verify the UI/presentation improvement on the next screenshot.
 
 ## Unresolved Questions
 
-- None blocking for documentation creation.
+- None blocking for the current audit/presentation pass.
 
 ## Files Changed in Current Phase
 
 - Root config: `project.godot`, `.gitignore`, `AGENTS.md`, `PLANS.md`, `README.md`
 - Docs: `docs/*.md` including architecture, asset policy, art bible, world bible, roadmap, Android testing, decisions, changelog, replacement guide, environment report, blockers, asset requests, release audit notes, plus the new game bible, source policy, license policy, Godot rules, Android rules, visual style, Codex workflow, production checklists, and source update policy
+- Docs: `docs/*.md` including architecture, asset policy, art bible, world bible, roadmap, Android testing, decisions, changelog, replacement guide, environment report, blockers, asset requests, release audit notes, plus the new game bible, source policy, license policy, Godot rules, Android rules, visual style, Codex workflow, production checklists, source update policy, current project status, and next development plan
 - Scripts: `scripts/autoload/`, `scripts/core/`, `scripts/player/`, `scripts/enemies/`, `scripts/npc/`, `scripts/combat/`, `scripts/dialogue/`, `scripts/quests/`, `scripts/ui/`, `scripts/world/`, `scripts/effects/`
 - Scenes: `scenes/boot/`, `scenes/main/`, `scenes/player/`, `scenes/enemies/`, `scenes/npc/`, `scenes/ui/`, `scenes/locations/`
 - Data: `data/assets/`, `data/dialogues/`, `data/enemies/`, `data/items/`, `data/quests/`, `data/locations/`

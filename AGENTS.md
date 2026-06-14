@@ -2,6 +2,9 @@
 
 Read these first before editing:
 
+- [docs/CURRENT_PROJECT_STATUS.md](docs/CURRENT_PROJECT_STATUS.md)
+- [docs/RELEASE_AUDIT.md](docs/RELEASE_AUDIT.md)
+- [docs/NEXT_DEVELOPMENT_PLAN.md](docs/NEXT_DEVELOPMENT_PLAN.md)
 - [docs/GAME_DEV_BIBLE.md](docs/GAME_DEV_BIBLE.md)
 - [docs/ASSET_SOURCES_2026.md](docs/ASSET_SOURCES_2026.md)
 - [docs/LICENSE_POLICY.md](docs/LICENSE_POLICY.md)
