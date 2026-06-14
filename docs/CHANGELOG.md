@@ -14,3 +14,6 @@
 - Added the first playable slice foundation for `Пепельный Дол: Клеймо Пустоши`.
 - Verified the repository with Godot 4.6.3 ARM64 headless structure, manifest, and startup smoke checks.
 - Added a PNG-friendly runtime asset fallback path in `AssetCatalog` for headless validation environments.
+- Compactified the mobile HUD layout for better landscape readability on phones.
+- Updated the journal to show the quest title instead of only the raw quest ID.
+- Added a release audit and Android release notes for the current vertical slice.

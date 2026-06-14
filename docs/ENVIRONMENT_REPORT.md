@@ -1,5 +1,51 @@
 # Environment Report
 
+## Release-prep inspection
+
+Date: 2026-06-14
+
+### Repository state
+
+- The repository is populated and the current branch is `codex/bootstrap-rpg`.
+- `git status --short --branch` was clean after restoring deleted tracked files from `HEAD`.
+- The working tree contains the current Godot 4.6 Android-first prototype and its bootstrap data/content.
+
+### Verified tools
+
+- `git`
+- `curl`
+- `wget` was not found in `PATH`.
+- `unzip`
+- `sha256sum`
+- `python3`
+- `bash`
+
+### Godot availability
+
+- `godot` was not found in `PATH`.
+- `godot4` was not found in `PATH`.
+- A temporary ARM64 Godot 4.6.3 binary is available at `/tmp/godot-4.6.3-arm64/Godot_v4.6.3-stable_linux.arm64`.
+
+### Network
+
+- Internet access is available in this environment.
+
+### Current release-prep findings
+
+- `project.godot` is present and configured for the Compatibility renderer and landscape Android layout.
+- The current playable loop exists, but HUD polish, Android export preparation, and device-side QA still need attention.
+- No `export_presets.cfg` was present during this inspection, so Android export setup remains a release gap.
+
+### Notes
+
+- Headless runtime validation can be rerun with the temporary Godot binary once the current polish edits are complete.
+
+### Current release-prep validation
+
+- `"/tmp/godot-4.6.3-arm64/Godot_v4.6.3-stable_linux.arm64 --headless --path /root/game --script res://tools/validate_project_structure.gd"` exited `0`.
+- `"/tmp/godot-4.6.3-arm64/Godot_v4.6.3-stable_linux.arm64 --headless --path /root/game --script res://tools/validate_asset_manifest.gd"` exited `0`.
+- `"/tmp/godot-4.6.3-arm64/Godot_v4.6.3-stable_linux.arm64 --headless --path /root/game --script res://tools/validate_runtime_smoke.gd"` exited `0` and started `res://scenes/main/title_screen.tscn`.
+
 Date: 2026-06-13
 
 ## Repository state

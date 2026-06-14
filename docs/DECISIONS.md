@@ -33,6 +33,8 @@
 - Keep UI compact and touch-first.
 - Use a small vertical slice rather than a broad unfinished system set.
 - Use a persistent main scene plus location scenes to keep Android memory predictable.
+- Rework mobile HUD spacing with anchored controls and smaller touch targets instead of using a desktop-style overlay.
+- Show the quest title in the journal so the first objective reads like a release build, not an internal identifier.
 
 ## Validation
 
