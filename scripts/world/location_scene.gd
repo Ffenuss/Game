@@ -61,6 +61,7 @@ var _player_node: PlayerCharacter = null
 
 
 func _ready() -> void:
+	modulate = Color(0.84, 0.88, 0.93, 1.0)
 	characters_layer.y_sort_enabled = true
 	front_decoration_layer.y_sort_enabled = true
 	back_decoration_layer.y_sort_enabled = true

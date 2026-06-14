@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3]
+[gd_scene load_steps=9 format=3]
 
 [ext_resource type="Script" path="res://scripts/core/main_root.gd" id="1"]
 [ext_resource type="PackedScene" path="res://scenes/ui/mobile_hud.tscn" id="2"]
@@ -7,9 +7,25 @@
 [ext_resource type="PackedScene" path="res://scenes/ui/inventory_panel.tscn" id="5"]
 [ext_resource type="PackedScene" path="res://scenes/ui/journal_panel.tscn" id="6"]
 [ext_resource type="PackedScene" path="res://scenes/ui/quest_update_panel.tscn" id="7"]
+[ext_resource type="Texture2D" path="res://assets/runtime/ui/ui_background_vignette.png" id="8"]
 
 [node name="MainRoot" type="Node"]
 script = ExtResource("1")
+
+[node name="BackdropLayer" type="CanvasLayer" parent="."]
+layer = -50
+
+[node name="Backdrop" type="ColorRect" parent="BackdropLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 640.0
+offset_bottom = 360.0
+color = Color(0.040000001, 0.050000001, 0.070000001, 1)
+
+[node name="BackdropVignette" type="Sprite2D" parent="BackdropLayer"]
+position = Vector2(320, 180)
+texture = ExtResource("8")
+modulate = Color(1, 1, 1, 0.9)
 
 [node name="WorldHost" type="Node2D" parent="."]
 

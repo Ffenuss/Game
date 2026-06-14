@@ -64,6 +64,11 @@ Do not scatter raw asset paths through gameplay code.
   - Grid: `4x4`
   - Used for bar frames, buttons, save/checkpoint icons, and other temporary UI pieces.
 
+- `assets/runtime/ui/ui_background_vignette.png`
+  - Dimensions: `640x360`
+  - Use: full-screen dark backdrop and vignette framing for the Android slice.
+  - Replacement rule: preserve the same viewport-sized framing contract unless the backdrop layer is reworked at the same time.
+
 - `assets/runtime/items/item_placeholder_atlas.png`
   - Dimensions: `128x64`
   - Grid: `4x2`

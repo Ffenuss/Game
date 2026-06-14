@@ -11,6 +11,7 @@ enum PlayerState { IDLE, WALK, ATTACK_LIGHT, ATTACK_HEAVY, DODGE, HIT, DEAD }
 @export var dodge_stamina_cost: float = 18.0
 @export var light_attack_stamina_cost: float = 14.0
 @export var heavy_attack_stamina_cost: float = 28.0
+@export var camera_zoom: Vector2 = Vector2(1.22, 1.22)
 @export var light_attack_damage: int = 2
 @export var heavy_attack_damage: int = 4
 @export var light_attack_windup: float = 0.08
@@ -102,6 +103,9 @@ const ANIMATION_REGIONS := {
 func _ready() -> void:
 	add_to_group("player")
 	camera.current = true
+	camera.zoom = camera_zoom
+	camera.position_smoothing_enabled = true
+	camera.position_smoothing_speed = 6.0
 	sprite.sprite_frames = _build_sprite_frames()
 	sprite.play("idle_down")
 	health_component.health_changed.connect(_on_health_changed)
