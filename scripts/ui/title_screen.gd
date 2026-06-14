@@ -1,11 +1,16 @@
 extends Control
 class_name TitleScreen
 
+const UI_STYLE_SCRIPT := preload("res://scripts/ui/ui_style.gd")
+
+@onready var panel: NinePatchRect = $Panel
 @onready var title_label: Label = $Panel/VBox/TitleLabel
 @onready var subtitle_label: Label = $Panel/VBox/SubtitleLabel
 @onready var new_game_button: Button = $Panel/VBox/NewGameButton
 @onready var continue_button: Button = $Panel/VBox/ContinueButton
 @onready var credits_button: Button = $Panel/VBox/CreditsButton
+
+var _ui_style := UI_STYLE_SCRIPT.new()
 
 
 func _ready() -> void:
@@ -19,6 +24,12 @@ func _ready() -> void:
 	continue_button.pressed.connect(_continue_game)
 	credits_button.pressed.connect(_show_credits)
 	continue_button.disabled = not SaveManager.has_save()
+	_ui_style.apply_panel(panel, "ui.panel.title", 0.96)
+	_ui_style.apply_label(title_label, 21, _ui_style.FONT_PRIMARY, true)
+	_ui_style.apply_label(subtitle_label, 13, _ui_style.FONT_SECONDARY, true)
+	_ui_style.apply_button(new_game_button, _ui_style.ACCENT_FIRE, 11)
+	_ui_style.apply_button(continue_button, _ui_style.ACCENT_FOG, 11)
+	_ui_style.apply_button(credits_button, _ui_style.ACCENT_ASH, 11)
 	_set_skin()
 
 

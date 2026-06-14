@@ -1,12 +1,16 @@
 extends Control
 class_name JournalPanel
 
+const UI_STYLE_SCRIPT := preload("res://scripts/ui/ui_style.gd")
+
 @onready var background: Node = $Panel
 @onready var title_label: Label = $Panel/VBox/TitleLabel
 @onready var quest_label: Label = $Panel/VBox/QuestLabel
 @onready var objective_label: RichTextLabel = $Panel/VBox/ObjectiveLabel
 @onready var completed_label: RichTextLabel = $Panel/VBox/CompletedLabel
 @onready var close_button: Button = $Panel/VBox/Buttons/CloseButton
+
+var _ui_style := UI_STYLE_SCRIPT.new()
 
 
 func _ready() -> void:
@@ -15,7 +19,12 @@ func _ready() -> void:
 	title_label.text = "Журнал"
 	close_button.text = "Закрыть"
 	close_button.pressed.connect(hide_panel)
-	background.set("texture", AssetCatalog.texture("ui.panel.journal"))
+	_ui_style.apply_panel(background as NinePatchRect, "ui.panel.journal", 0.94)
+	_ui_style.apply_label(title_label, 17, _ui_style.FONT_PRIMARY, true)
+	_ui_style.apply_label(quest_label, 12, _ui_style.FONT_SECONDARY)
+	_ui_style.apply_rich_label(objective_label, _ui_style.FONT_SECONDARY)
+	_ui_style.apply_rich_label(completed_label, _ui_style.FONT_SECONDARY)
+	_ui_style.apply_button(close_button, _ui_style.ACCENT_ASH, 11)
 	refresh()
 
 

@@ -1,6 +1,8 @@
 extends Control
 class_name DialoguePanel
 
+const UI_STYLE_SCRIPT := preload("res://scripts/ui/ui_style.gd")
+
 signal closed()
 signal advance_requested()
 
@@ -10,6 +12,8 @@ signal advance_requested()
 @onready var portrait: TextureRect = $Panel/VBox/Header/Portrait
 @onready var continue_button: Button = $Panel/VBox/ContinueButton
 @onready var choice_container: VBoxContainer = $Panel/VBox/Choices
+
+var _ui_style := UI_STYLE_SCRIPT.new()
 
 var _dialogue_data: Dictionary = {}
 var _line_index: int = 0
@@ -25,6 +29,10 @@ func _ready() -> void:
 	visible = false
 	continue_button.text = "Дальше"
 	continue_button.pressed.connect(_on_continue_pressed)
+	_ui_style.apply_panel(background as NinePatchRect, "ui.panel.dialogue", 0.94)
+	_ui_style.apply_label(speaker_label, 14, _ui_style.FONT_PRIMARY)
+	_ui_style.apply_rich_label(body_label, _ui_style.FONT_SECONDARY)
+	_ui_style.apply_button(continue_button, _ui_style.ACCENT_FIRE, 11)
 	_set_skin()
 
 

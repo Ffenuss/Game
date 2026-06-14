@@ -1,6 +1,10 @@
 extends Control
 class_name MobileHud
 
+const UI_STYLE_SCRIPT := preload("res://scripts/ui/ui_style.gd")
+
+@onready var status_frame: NinePatchRect = $StatusFrame
+@onready var action_frame: NinePatchRect = $ActionFrame
 @onready var joystick: VirtualJoystick = $Joystick
 @onready var attack_light_button: Button = $Buttons/AttackLightButton
 @onready var attack_heavy_button: Button = $Buttons/AttackHeavyButton
@@ -14,6 +18,7 @@ class_name MobileHud
 @onready var prompt_label: Label = $Buttons/InteractButton/PromptLabel
 
 var _player: Node = null
+var _ui_style := UI_STYLE_SCRIPT.new()
 
 
 func _ready() -> void:
@@ -27,11 +32,15 @@ func _ready() -> void:
 	pause_button.text = "Пау"
 	prompt_label.text = "Взаим"
 	interact_button.visible = false
-	for button in [attack_light_button, attack_heavy_button, dodge_button, interact_button, heal_button, inventory_button, pause_button]:
-		button.focus_mode = Control.FOCUS_NONE
-		button.clip_text = true
-		button.add_theme_font_size_override("font_size", 10)
-		_apply_button_skin(button)
+	_ui_style.apply_panel(status_frame, "ui.panel.dialogue", 0.84)
+	_ui_style.apply_panel(action_frame, "ui.panel.inventory", 0.86)
+	_ui_style.apply_button(attack_light_button, _ui_style.ACCENT_FIRE, 9)
+	_ui_style.apply_button(attack_heavy_button, _ui_style.ACCENT_HEAVY, 9)
+	_ui_style.apply_button(dodge_button, _ui_style.ACCENT_FOG, 9)
+	_ui_style.apply_button(interact_button, _ui_style.ACCENT_HEAL, 9)
+	_ui_style.apply_button(heal_button, _ui_style.ACCENT_HEAL, 9)
+	_ui_style.apply_button(inventory_button, _ui_style.ACCENT_ASH, 9)
+	_ui_style.apply_button(pause_button, _ui_style.ACCENT_ASH, 9)
 	_wire_button(attack_light_button, "attack_light")
 	_wire_button(attack_heavy_button, "attack_heavy")
 	_wire_button(dodge_button, "dodge")
@@ -42,6 +51,7 @@ func _ready() -> void:
 	joystick.direction_changed.connect(_on_joystick_direction_changed)
 	GameState.interaction_prompt_changed.connect(_on_interaction_prompt_changed)
 	_set_default_textures()
+	_ui_style.apply_label(prompt_label, 9, _ui_style.FONT_SECONDARY, true)
 	_on_interaction_prompt_changed(false, "")
 
 
@@ -80,40 +90,6 @@ func _set_default_textures() -> void:
 	_set_button_texture(heal_button, "ui.button.heal")
 	_set_button_texture(inventory_button, "ui.button.inventory")
 	_set_button_texture(pause_button, "ui.button.pause")
-
-
-func _apply_button_skin(button: Button) -> void:
-	var normal := StyleBoxFlat.new()
-	normal.bg_color = Color(0.07, 0.08, 0.10, 0.74)
-	normal.border_color = Color(0.23, 0.27, 0.32, 0.82)
-	normal.border_width_left = 1
-	normal.border_width_top = 1
-	normal.border_width_right = 1
-	normal.border_width_bottom = 1
-	normal.corner_radius_top_left = 9
-	normal.corner_radius_top_right = 9
-	normal.corner_radius_bottom_left = 9
-	normal.corner_radius_bottom_right = 9
-	normal.content_margin_left = 3
-	normal.content_margin_right = 3
-	normal.content_margin_top = 1
-	normal.content_margin_bottom = 1
-	button.add_theme_stylebox_override("normal", normal)
-
-	var hover := normal.duplicate() as StyleBoxFlat
-	hover.bg_color = Color(0.11, 0.12, 0.15, 0.82)
-	hover.border_color = Color(0.44, 0.30, 0.18, 0.92)
-	button.add_theme_stylebox_override("hover", hover)
-
-	var pressed := normal.duplicate() as StyleBoxFlat
-	pressed.bg_color = Color(0.15, 0.10, 0.08, 0.92)
-	pressed.border_color = Color(0.75, 0.44, 0.20, 1.0)
-	button.add_theme_stylebox_override("pressed", pressed)
-
-	button.add_theme_color_override("font_color", Color(0.95, 0.96, 0.97, 1.0))
-	button.add_theme_color_override("font_hover_color", Color(1.0, 0.96, 0.86, 1.0))
-	button.add_theme_color_override("font_pressed_color", Color(1.0, 0.91, 0.74, 1.0))
-	button.add_theme_color_override("font_disabled_color", Color(0.58, 0.61, 0.64, 1.0))
 
 
 func _set_button_texture(button: Button, asset_id: String) -> void:

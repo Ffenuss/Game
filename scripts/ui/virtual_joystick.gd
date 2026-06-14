@@ -3,8 +3,8 @@ class_name VirtualJoystick
 
 signal direction_changed(direction: Vector2)
 
-@export var radius: float = 44.0
-@export var deadzone: float = 0.16
+@export var radius: float = 38.0
+@export var deadzone: float = 0.14
 
 var _active_pointer: int = -1
 var _base_position: Vector2 = Vector2.ZERO
@@ -71,8 +71,7 @@ func _reset() -> void:
 
 func _draw() -> void:
 	var center := size * 0.5
-	draw_circle(center, radius, Color(0.07, 0.08, 0.10, 0.34))
-	draw_circle(center, radius * 0.82, Color(0.12, 0.13, 0.16, 0.18))
-	draw_circle(center + _knob_position, radius * 0.30, Color(0.82, 0.86, 0.92, 0.58))
-	draw_circle(center + _knob_position, radius * 0.16, Color(0.98, 0.96, 0.88, 0.22))
-
+	draw_circle(center, radius, Color(0.07, 0.08, 0.10, 0.24))
+	draw_circle(center, radius * 0.82, Color(0.12, 0.13, 0.16, 0.14))
+	draw_circle(center + _knob_position, radius * 0.30, Color(0.84, 0.88, 0.94, 0.50))
+	draw_circle(center + _knob_position, radius * 0.16, Color(0.98, 0.96, 0.88, 0.18))

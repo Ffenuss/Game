@@ -1,6 +1,8 @@
 extends Control
 class_name PauseMenu
 
+const UI_STYLE_SCRIPT := preload("res://scripts/ui/ui_style.gd")
+
 signal resume_requested()
 signal restart_requested()
 signal main_menu_requested()
@@ -15,6 +17,8 @@ signal journal_requested()
 @onready var restart_button: Button = $Panel/Buttons/RestartButton
 @onready var main_menu_button: Button = $Panel/Buttons/MainMenuButton
 @onready var title_label: Label = $Panel/TitleLabel
+
+var _ui_style := UI_STYLE_SCRIPT.new()
 
 
 func _ready() -> void:
@@ -41,7 +45,14 @@ func _ready() -> void:
 	main_menu_button.pressed.connect(func() -> void:
 		emit_signal("main_menu_requested")
 	)
-	background.set("texture", AssetCatalog.texture("ui.panel.pause"))
+	_ui_style.apply_panel(background as NinePatchRect, "ui.panel.pause", 0.95)
+	_ui_style.apply_label(title_label, 19, _ui_style.FONT_PRIMARY, true)
+	_ui_style.apply_button(continue_button, _ui_style.ACCENT_FOG, 11)
+	_ui_style.apply_button(inventory_button, _ui_style.ACCENT_ASH, 11)
+	_ui_style.apply_button(journal_button, _ui_style.ACCENT_ASH, 11)
+	_ui_style.apply_button(settings_button, _ui_style.ACCENT_ASH, 11)
+	_ui_style.apply_button(restart_button, _ui_style.ACCENT_FIRE, 11)
+	_ui_style.apply_button(main_menu_button, _ui_style.ACCENT_ASH, 11)
 
 
 func open() -> void:

@@ -1,6 +1,8 @@
 extends Control
 class_name InventoryPanel
 
+const UI_STYLE_SCRIPT := preload("res://scripts/ui/ui_style.gd")
+
 @onready var background: Node = $Panel
 @onready var title_label: Label = $Panel/VBox/TitleLabel
 @onready var list: ItemList = $Panel/VBox/Content/ItemList
@@ -11,6 +13,8 @@ class_name InventoryPanel
 @onready var equip_button: Button = $Panel/VBox/Buttons/EquipButton
 @onready var close_button: Button = $Panel/VBox/Buttons/CloseButton
 @onready var use_button: Button = $Panel/VBox/Buttons/UseButton
+
+var _ui_style := UI_STYLE_SCRIPT.new()
 
 const ITEM_ICON_REGIONS := {
 	"rusty_knife": Rect2i(0, 0, 32, 32),
@@ -37,7 +41,15 @@ func _ready() -> void:
 	use_button.pressed.connect(_use_selected_item)
 	equip_button.pressed.connect(_equip_selected_item)
 	list.item_selected.connect(_on_item_selected)
-	_set_skin()
+	_ui_style.apply_panel(background as NinePatchRect, "ui.panel.inventory", 0.94)
+	_ui_style.apply_label(title_label, 17, _ui_style.FONT_PRIMARY, true)
+	_ui_style.apply_label(name_label, 13, _ui_style.FONT_PRIMARY)
+	_ui_style.apply_label(quantity_label, 11, _ui_style.FONT_SECONDARY)
+	_ui_style.apply_rich_label(description, _ui_style.FONT_SECONDARY)
+	_ui_style.apply_item_list(list)
+	_ui_style.apply_button(use_button, _ui_style.ACCENT_HEAL, 11)
+	_ui_style.apply_button(equip_button, _ui_style.ACCENT_FOG, 11)
+	_ui_style.apply_button(close_button, _ui_style.ACCENT_ASH, 11)
 	refresh()
 
 
