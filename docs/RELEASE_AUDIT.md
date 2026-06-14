@@ -19,7 +19,7 @@ Status: PARTIAL
 
 Status: PARTIAL
 
-- Evidence: `scenes/ui/mobile_hud.tscn`, `scripts/ui/mobile_hud.gd`, `scripts/ui/virtual_joystick.gd`.
+- Evidence: `scenes/ui/mobile_hud.tscn`, `scripts/ui/mobile_hud.gd`, `scripts/ui/virtual_joystick.gd`; the current rescue pass compacted the labels, reduced the joystick footprint, and pushed the action cluster into the lower-right thumb zone.
 - Missing: final device-side readability, safe-zone spacing, and thumb reach checks.
 - Next action: confirm the compact HUD on a handset screenshot.
 
@@ -27,7 +27,7 @@ Status: PARTIAL
 
 Status: PARTIAL
 
-- Evidence: modal UI exists for title, pause, dialogue, inventory, journal, and quest update, and `scripts/ui/ui_style.gd` now applies a shared presentation layer.
+- Evidence: modal UI exists for title, pause, dialogue, inventory, journal, and quest update; `scripts/ui/ui_style.gd` applies a shared presentation layer; the current pass also generates a darker world backdrop and more compact mobile panels.
 - Missing: Android device screenshot confirmation for safe margins and final readability.
 - Next action: verify the current UI skin on real hardware and keep the layout tight.
 
@@ -35,7 +35,7 @@ Status: PARTIAL
 
 Status: PARTIAL
 
-- Evidence: `scripts/player/player.gd` sets follow camera zoom; `scenes/main/main.tscn` adds a dark backdrop and vignette; `data/locations/collapsed_bridge.json` has been widened and re-centered for the M1 visual rescue pass.
+- Evidence: `scripts/player/player.gd` sets follow camera zoom; `scenes/main/main.tscn` adds a dark backdrop, vignette, and `assets/runtime/environment/world_backdrop_mist.png`; `data/locations/collapsed_bridge.json` has been widened and re-centered for the M1 visual rescue pass; `scripts/world/location_scene.gd` now spawns the player correctly again.
 - Missing: device-side screenshot confirmation that the playfield composition feels intentional.
 - Next action: confirm the updated HUD does not compete with the central play area.
 
@@ -43,7 +43,7 @@ Status: PARTIAL
 
 Status: PARTIAL
 
-- Evidence: `data/locations/collapsed_bridge.json` now carries the widened first-chapter framing, `data/locations/old_ledge.json`, `scripts/world/location_scene.gd`.
+- Evidence: `data/locations/collapsed_bridge.json` now carries the widened first-chapter framing, `data/locations/old_ledge.json`, `scripts/world/location_scene.gd`, and the generated world backdrop now fills the gray margins behind the play space.
 - Missing: final phone-sized readability pass and later content expansion.
 - Next action: keep the current compact map readable after the UI update and verify the screenshot no longer reads like a test room.
 
@@ -51,7 +51,7 @@ Status: PARTIAL
 
 Status: PARTIAL
 
-- Evidence: generated placeholders, normalized runtime assets, and the backdrop/vignette layer already used in the main scene.
+- Evidence: generated placeholders, normalized runtime assets, the backdrop/vignette layer, and the compacted mobile HUD styling now used in the main scene.
 - Missing: final unified presentation layer and later bespoke art replacements.
 - Next action: finish the current presentation pass before adding new content.
 

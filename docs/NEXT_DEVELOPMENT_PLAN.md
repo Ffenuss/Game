@@ -31,6 +31,11 @@ This milestone is intentionally narrow: it does not add new gameplay systems. It
 - `scenes/ui/mobile_hud.tscn`
 - `scripts/ui/mobile_hud.gd`
 - `scripts/world/location_scene.gd`
+- `scripts/player/player.gd`
+- `tools/generate_placeholder_assets.gd`
+- `data/assets/asset_manifest.json`
+- `assets/generated/placeholders/environment/world_backdrop_mist.png`
+- `assets/runtime/environment/world_backdrop_mist.png`
 - `docs/RELEASE_AUDIT.md`
 - `docs/CHANGELOG.md`
 - `docs/BLOCKERS.md`

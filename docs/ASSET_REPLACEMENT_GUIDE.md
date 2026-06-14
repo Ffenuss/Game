@@ -71,6 +71,11 @@ Do not scatter raw asset paths through gameplay code.
   - Use: full-screen dark backdrop and vignette framing for the Android slice.
   - Replacement rule: preserve the same viewport-sized framing contract unless the backdrop layer is reworked at the same time.
 
+- `assets/runtime/environment/world_backdrop_mist.png`
+  - Dimensions: `640x360`
+  - Use: dark full-screen world backdrop under the main scene to hide prototype-gray margins and frame the first location.
+  - Replacement rule: preserve the viewport-sized framing contract or update the backdrop layer and its manifest entry together.
+
 - `assets/runtime/items/item_placeholder_atlas.png`
   - Dimensions: `128x64`
   - Grid: `4x2`

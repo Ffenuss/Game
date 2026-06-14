@@ -2,7 +2,7 @@
 
 ## Current Phase
 
-Current-state audit completed; M1 visual rescue pass is in progress; the immediate goal is to make the first chapter screenshot read like a real game instead of a gray prototype.
+Current-state audit completed; M1 visual rescue pass is in progress; the immediate goal is to make the first chapter screenshot read like a real game instead of a gray prototype. The current pass now includes a generated dark world backdrop, a corrected player spawn path, and a stronger HUD/camera composition.
 
 ## Current Diagnosis
 
@@ -33,6 +33,9 @@ Current-state audit completed; M1 visual rescue pass is in progress; the immedia
 - Refined the mobile HUD for smaller touch targets and better landscape anchoring.
 - Tightened the mobile HUD again after screenshot review so the action cluster sits deeper in the lower-right thumb zone and the status panel is less dominant.
 - Softened the HUD chrome and reduced caption font size so the controls read less like debug widgets and more like a game UI.
+- Fixed the player spawn path in the location scene so the player actually instantiates again.
+- Generated and wired a full-screen dark world backdrop asset to replace the gray prototype margins.
+- Increased camera zoom slightly so the first location reads larger on the screen.
 - Updated the journal to show the quest title instead of only the raw quest ID.
 - Recorded the current release-prep environment state and release audit gaps.
 - Reworked the visual polish pass to target backdrop framing, camera composition, and more readable mobile UI surfaces.
@@ -123,7 +126,7 @@ Current-state audit completed; M1 visual rescue pass is in progress; the immedia
 - Root config: `project.godot`, `.gitignore`, `AGENTS.md`, `PLANS.md`, `README.md`
 - Docs: `docs/*.md` including architecture, asset policy, art bible, world bible, roadmap, Android testing, decisions, changelog, replacement guide, environment report, blockers, asset requests, release audit notes, plus the new game bible, source policy, license policy, Godot rules, Android rules, visual style, Codex workflow, production checklists, and source update policy
 - Docs: `docs/*.md` including architecture, asset policy, art bible, world bible, roadmap, Android testing, decisions, changelog, replacement guide, environment report, blockers, asset requests, release audit notes, plus the new game bible, source policy, license policy, Godot rules, Android rules, visual style, Codex workflow, production checklists, source update policy, current project status, and next development plan
-- Current rescue-pass files: `data/locations/collapsed_bridge.json`, `scenes/main/main.tscn`, `scenes/ui/mobile_hud.tscn`, `scripts/ui/mobile_hud.gd`, `scripts/world/location_scene.gd`, `docs/CHANGELOG.md`, `docs/CURRENT_PROJECT_STATUS.md`, `docs/NEXT_DEVELOPMENT_PLAN.md`, `docs/RELEASE_AUDIT.md`, `docs/VISUAL_QA.md`, `docs/FULL_GAME_PRODUCTION_PLAN.md`, `docs/CHAPTER_1_DESIGN.md`
+- Current rescue-pass files: `assets/generated/placeholders/environment/world_backdrop_mist.png`, `assets/runtime/environment/world_backdrop_mist.png`, `data/assets/asset_manifest.json`, `data/locations/collapsed_bridge.json`, `scenes/main/main.tscn`, `scenes/ui/mobile_hud.tscn`, `scripts/player/player.gd`, `scripts/ui/mobile_hud.gd`, `scripts/world/location_scene.gd`, `tools/generate_placeholder_assets.gd`, `docs/CHANGELOG.md`, `docs/ASSET_REPLACEMENT_GUIDE.md`
 - Scripts: `scripts/autoload/`, `scripts/core/`, `scripts/player/`, `scripts/enemies/`, `scripts/npc/`, `scripts/combat/`, `scripts/dialogue/`, `scripts/quests/`, `scripts/ui/`, `scripts/world/`, `scripts/effects/`
 - Scenes: `scenes/boot/`, `scenes/main/`, `scenes/player/`, `scenes/enemies/`, `scenes/npc/`, `scenes/ui/`, `scenes/locations/`
 - Data: `data/assets/`, `data/dialogues/`, `data/enemies/`, `data/items/`, `data/quests/`, `data/locations/`
