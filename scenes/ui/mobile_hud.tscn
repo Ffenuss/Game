@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=6 format=3]
 
 [ext_resource type="Script" path="res://scripts/ui/mobile_hud.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/ui/virtual_joystick.gd" id="2"]
+[ext_resource type="Texture2D" path="res://assets/runtime/ui/kenney_panel_dialogue.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/runtime/ui/kenney_panel_inventory.png" id="4"]
+[ext_resource type="Texture2D" path="res://assets/runtime/ui/kenney_panel_pause.png" id="5"]
 
 [node name="MobileHud" type="Control"]
 anchor_right = 1.0
@@ -10,75 +13,121 @@ offset_right = 640.0
 offset_bottom = 360.0
 script = ExtResource("1")
 
+[node name="StatusFrame" type="NinePatchRect" parent="."]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 212.0
+offset_bottom = 58.0
+texture = ExtResource("3")
+patch_margin_left = 12
+patch_margin_top = 12
+patch_margin_right = 12
+patch_margin_bottom = 12
+modulate = Color(1, 1, 1, 0.88)
+
 [node name="Bars" type="Control" parent="."]
 anchor_right = 0.0
 anchor_bottom = 0.0
-offset_left = 12.0
-offset_top = 12.0
-offset_right = 248.0
-offset_bottom = 56.0
+offset_left = 18.0
+offset_top = 16.0
+offset_right = 196.0
+offset_bottom = 48.0
 
 [node name="HealthBar" type="TextureProgressBar" parent="Bars"]
 position = Vector2(0, 0)
-size = Vector2(224, 16)
+size = Vector2(176, 12)
 value = 100.0
 
 [node name="StaminaBar" type="TextureProgressBar" parent="Bars"]
-position = Vector2(0, 22)
-size = Vector2(224, 16)
+position = Vector2(0, 18)
+size = Vector2(176, 12)
 value = 100.0
 
-[node name="Joystick" type="Control" parent="."]
+[node name="PauseButton" type="Button" parent="."]
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.0
+offset_left = -72.0
+offset_top = 10.0
+offset_right = -12.0
+offset_bottom = 36.0
+text = "Пауза"
+custom_minimum_size = Vector2(60, 26)
+
+[node name="ActionFrame" type="NinePatchRect" parent="."]
+anchor_left = 1.0
 anchor_top = 1.0
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 16.0
-offset_top = -144.0
-offset_right = 144.0
-offset_bottom = -16.0
-script = ExtResource("2")
+offset_left = -186.0
+offset_top = -138.0
+offset_right = -12.0
+offset_bottom = -12.0
+texture = ExtResource("4")
+patch_margin_left = 12
+patch_margin_top = 12
+patch_margin_right = 12
+patch_margin_bottom = 12
+modulate = Color(1, 1, 1, 0.9)
 
 [node name="Buttons" type="Control" parent="."]
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -184.0
-offset_top = -164.0
-offset_right = -16.0
-offset_bottom = -16.0
+offset_left = -172.0
+offset_top = -126.0
+offset_right = -20.0
+offset_bottom = -20.0
 
 [node name="AttackLightButton" type="Button" parent="Buttons"]
 position = Vector2(0, 0)
-size = Vector2(80, 34)
-custom_minimum_size = Vector2(80, 34)
+size = Vector2(72, 28)
+custom_minimum_size = Vector2(72, 28)
 
 [node name="AttackHeavyButton" type="Button" parent="Buttons"]
-position = Vector2(88, 0)
-size = Vector2(80, 34)
-custom_minimum_size = Vector2(80, 34)
+position = Vector2(80, 0)
+size = Vector2(72, 28)
+custom_minimum_size = Vector2(72, 28)
 
 [node name="DodgeButton" type="Button" parent="Buttons"]
-position = Vector2(0, 42)
-size = Vector2(80, 34)
-custom_minimum_size = Vector2(80, 34)
+position = Vector2(0, 36)
+size = Vector2(72, 28)
+custom_minimum_size = Vector2(72, 28)
 
 [node name="InteractButton" type="Button" parent="Buttons"]
-position = Vector2(88, 42)
-size = Vector2(80, 34)
-custom_minimum_size = Vector2(80, 34)
+position = Vector2(80, 36)
+size = Vector2(72, 28)
+custom_minimum_size = Vector2(72, 28)
 
 [node name="PromptLabel" type="Label" parent="Buttons/InteractButton"]
-position = Vector2(2, 12)
-size = Vector2(76, 16)
+position = Vector2(2, 9)
+size = Vector2(68, 12)
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="HealButton" type="Button" parent="Buttons"]
-position = Vector2(0, 84)
-size = Vector2(80, 34)
-custom_minimum_size = Vector2(80, 34)
+position = Vector2(0, 72)
+size = Vector2(72, 28)
+custom_minimum_size = Vector2(72, 28)
 
-[node name="PauseButton" type="Button" parent="Buttons"]
-position = Vector2(88, 84)
-size = Vector2(80, 34)
-custom_minimum_size = Vector2(80, 34)
+[node name="InventoryButton" type="Button" parent="Buttons"]
+position = Vector2(80, 72)
+size = Vector2(72, 28)
+custom_minimum_size = Vector2(72, 28)
+
+[node name="Joystick" type="Control" parent="."]
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -118.0
+offset_right = 128.0
+offset_bottom = -10.0
+script = ExtResource("2")
