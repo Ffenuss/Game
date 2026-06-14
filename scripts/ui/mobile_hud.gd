@@ -30,7 +30,7 @@ func _ready() -> void:
 	_style_button(attack_heavy_button, "Сил.", BUTTON_TEXTURES["attack_heavy"], Color(0.58, 0.30, 0.18))
 	_style_button(dodge_button, "Кувырок", BUTTON_TEXTURES["dodge"], Color(0.34, 0.52, 0.66))
 	_style_button(interact_button, "Осмотр", BUTTON_TEXTURES["interact"], Color(0.56, 0.54, 0.26))
-	_style_button(heal_button, "Трава", BUTTON_TEXTURES["heal"], Color(0.26, 0.58, 0.34))
+	_style_button(heal_button, "Трава", BUTTON_TEXTURES["use_heal"], Color(0.26, 0.58, 0.34))
 	_style_button(pause_button, "Пауза", BUTTON_TEXTURES["pause"], Color(0.42, 0.44, 0.50))
 	pause_button.text = "Пауза"
 	interact_button.visible = false
